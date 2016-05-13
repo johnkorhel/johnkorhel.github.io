@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
+    transition: 1s ease-in-out;
 }
 
 canvas {
@@ -51,6 +52,7 @@ canvas {
     max-height: 20px;
     color: #FFF;
     display: table-cell;
+    transition: .7s ease-in-out;
 }
 
 @media(max-width: 948px) {
@@ -94,6 +96,7 @@ canvas {
     text-align: center;
     background-size: cover;
     text-transform: uppercase;
+    transition: .7s ease-in-out;
 
 }
 
@@ -106,7 +109,7 @@ canvas {
     border: 1px solid rgba(255, 255, 255, .1);
 }
 
-@media(max-width: 948px) {
+@media(max-width: 1000px) {
     .header-text {
         font-size: 5em;
     }
