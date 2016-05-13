@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Legend Webmaster</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'about', 'creation', 'brief'],
+                recordHistory: true,
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+            is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+            is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+            is_safari = navigator.userAgent.indexOf("Safari") > -1;
+            is_opera = navigator.userAgent.indexOf("Presto") > -1;
+            is_mac = (navigator.userAgent.indexOf('Mac OS') != -1);
+            is_windows = !is_mac;
+
+            if (is_chrome && is_safari) {
+                is_safari = false;
+            }
+
+            if (is_safari || is_windows) {
+                $('.content').css('font-weight', '300');
+            }
+
+
+        });
+    </script>
+</head>
+
+<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/faviconpple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<body>
+
+    <div class="borders"></div>
+    <div id="particles-js"></div>
+
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="container">
+                <div class="row">
+                    <div class="col lg-12">
+                        <div class="header-sec text-center">
+                            <div class="header-text">
+                                <span class="first">Webmaster</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-menuanchor="about" class="glypharrow">
+                <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"></a>
+            </div>
+        </div>
+
+
+
+        <div class="section" id="section1" data-anchor="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="content">The Technology Student Association (TSA) is the only student organization devoted exclusively to the needs of students engaged in science, technology, engineering and mathematics (STEM). Open to students enrolled in or who have completed technology education courses, TSA memberships includes over 200,000 middle and high school students in over 2,000 schools spanning 49 states. TSA is supported by educators, parents and business leaders who believe in the need for a technologically literate society. Members learn through exciting competitive events, leadership opportunities and much more. The diversity of activities makes TSA a positive experience for every student. From engineers to business managers, our alumni credit TSA with a positive influence on their lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section" id="section2" data-anchor="creation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="content">
+                            This site was hand coded by Legend High School TSA across multiple CSS and JS frameworks including Twitter's Bootstrap 3, Fullpage.js, Animate.css, and Particles.js. The molecule-like background effect is provided by the Particles.js framework. All images used in the site are either non copyrighted or captured by the team. All sources are cited on the 'resources' page that can be found on the design brief below. The site was created by a team of 3 individuals, all interested in expanding their knowledge of flat and stylish web design. The site is built mobile first, meaning that it looks amazing on any modern phone or tablet.
+                            <br> Enjoy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3" data-anchor="brief">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text center">
+                        <a href="main.html"><img class="img-responsive" src="img/Mac-Main-Shot.png" style="padding: 50px 50px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
