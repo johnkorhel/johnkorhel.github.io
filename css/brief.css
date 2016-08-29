@@ -1,6 +1,4 @@
-/* Hi ;) */
 body {
-    background: url(../img/stars-690522.jpg) no-repeat center fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -12,7 +10,6 @@ canvas {
     display: block;
     vertical-align: bottom;
 }
-
 
 #particles-js {
     width: 100%;
@@ -26,6 +23,7 @@ canvas {
     display: block;
     vertical-align: bottom;
 }
+
 .glypharrow {
     bottom: 75px;
     left: 50%;
@@ -33,17 +31,16 @@ canvas {
     z-index: 1;
     position: absolute;
     font-size: 2.3em;
-    
 }
 
-@media screen and (max-device-width: 1000px) and (orientation:landscape){
+@media screen and (max-device-width: 1000px) and (orientation:landscape) {
     .glypharrow {
-        display:none;
+        display: none;
     }
 }
 
 .glypharrow a:hover {
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .content {
@@ -73,17 +70,20 @@ canvas {
         font-size: 1.3em;
     }
 }
+
 @media(max-width: 377px) {
     .content {
         font-size: 1.1em;
     }
 }
+
 @media(max-width: 321px) {
     .content {
         font-size: 1.0em;
     }
 }
-@media screen and (max-device-height: 527px) and (orientation:landscape){
+
+@media screen and (max-device-height: 527px) and (orientation:landscape) {
     .content {
         font-size: 1.1em;
     }
@@ -98,8 +98,8 @@ canvas {
     background-size: cover;
     text-transform: uppercase;
     transition: .7s ease-in-out;
-
 }
+
 .subheader-text {
     font: 100 6em Lato;
     color: #FFF;
@@ -132,5 +132,23 @@ canvas {
     }
 }
 
+#section0 {
+    background: rgba(73, 155, 234, 1);
+    background: -moz-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.5) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73, 155, 234, 1)), color-stop(100%, rgba(32, 124, 229, 0.5)));
+    background: -webkit-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.5) 100%);
+    background: -o-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.5) 100%);
+    background: -ms-linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.5) 100%);
+    background: linear-gradient(45deg, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1);
+}
 
-    
+#section1 {}
+
+#section2 {
+    background-color: rgba(40, 146, 215, .5);
+}
+
+#section3 {
+    background-color: rgba(27, 67, 83, .5);
+}

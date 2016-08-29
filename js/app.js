@@ -21,19 +21,14 @@ particlesJS('particles-js',
       "polygon": {
         "nb_sides": 5
       },
-      "image": {
-        "src": "img/github.svg",
-        "width": 50,
-        "height": 50
-      }
     },
     "opacity": {
-      "value": .5,
+      "value": .7,
       "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.7,
+        "opacity_min": 1.0,
         "sync": false
       }
     },
@@ -51,7 +46,7 @@ particlesJS('particles-js',
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.7,
+      "opacity": 0.9,
       "width": 1
     },
     "move": {
