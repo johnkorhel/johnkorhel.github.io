@@ -1,6 +1,6 @@
 /* Hi ;) */
 body {
-    background: url(../img/stars-690522.jpg) no-repeat center fixed;
+    background: url(../img/download.png) no-repeat center fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -168,7 +168,7 @@ canvas {
 #nav-icon3 {
   width: 30px;
   height: 20px;
-  top: 20px;
+  top: 25px;
   right: 24px;
   z-index: 1003;
   position: fixed;
