@@ -1,0 +1,57 @@
+.trans--grow-200px {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 0;
+}
+
+.grow-200px {
+    width: 200px;
+}
+
+.trans--grow-150px {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grow-150px {
+    width: 150px;
+}
+
+.class-desc {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title-hr {
+    padding-top: 1px;
+    border: none;
+    background-color: darkblue;
+}
+
+.title-bar {
+    padding: 5px;
+    margin-top: 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.down-arrow {
+    color: gray;
+}
+
+.footer {
+    padding: 5px;
+}
+
+.no-margins {
+    margin: 0;
+}
+
+.award-wins {
+    font-size: 15pt;
+}
