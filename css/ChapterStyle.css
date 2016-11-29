@@ -63,7 +63,7 @@
   top: 25px;
   right: 24px;
   z-index: 1003;
-  position: fixed;
+  position: absolute;
 }
 
 #nav-icon3 span {
