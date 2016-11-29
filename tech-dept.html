@@ -4,6 +4,8 @@
 <head>
     <!--Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
 
     <!--Materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -20,6 +22,15 @@
     <link rel="stylesheet" href="./css/ChapterStyle.css">
 
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.button-collapse').sideNav({
+                closeOnClick: true
+            });
+            $('.collapsible').collapsible();
+        });
+    </script>
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -38,22 +49,43 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
 <body>
-
+    
+<ul id="slide-out" class="side-nav full">
+        <a id="logo-container" class="brand-logo">
+            <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
+        </a>
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header" href="index.html">Intro</a></li>
+            <li class="bold"> <a class="collapsible-header">Chapter</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="tech-dept.html">Tech Department</a></li>
+                        <li><a href="officers.html">Officers</a></li>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold"> <a class="collapsible-header">Brief</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="brief.html">Augmented Reality</a></li>
+                        <li><a href="brief.html#about">What is AR?</a></li>
+                        <li><a href="brief.html#creation">Importance of AR</a></li>
+                        <li><a href="brief.html#brief">Dangers of AR</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        </li>
+    </ul>
+    </ul>
     <script>
         $(document).ready(function () {
             $(".trans--grow-200px").addClass("grow-200px");
             $(".trans--grow-150px").addClass("grow-150px");
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.button-collapse').sideNav({
-                closeOnClick: true
-            });
-            $('.collapsible').collapsible();
         });
     </script>
 
@@ -254,9 +286,11 @@
             <p class="grey-text text-lighten-4 center-align">© 2016-2017 Dane Rieber, John Korhel, and John Ripple</p>
         </div>
     </footer>
+    
     <a href="#!" data-activates="slide-out" class="button-collapse">
         <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
     </a>
+
 </body>
 
 </html>
