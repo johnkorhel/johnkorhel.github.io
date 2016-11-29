@@ -38,12 +38,22 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
 <body>
 
     <script>
         $(document).ready(function () {
             $(".trans--grow-200px").addClass("grow-200px");
             $(".trans--grow-150px").addClass("grow-150px");
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.button-collapse').sideNav({
+                closeOnClick: true
+            });
+            $('.collapsible').collapsible();
         });
     </script>
 
@@ -244,7 +254,9 @@
             <p class="grey-text text-lighten-4 center-align">© 2016-2017 Dane Rieber, John Korhel, and John Ripple</p>
         </div>
     </footer>
-
+    <a href="#!" data-activates="slide-out" class="button-collapse">
+        <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
+    </a>
 </body>
 
 </html>
