@@ -18,11 +18,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'creation', 'brief']
-                , recordHistory: true
-            , });
+                anchors: ['home', 'about', 'creation', 'brief'],
+                recordHistory: true,
+            });
         });
     </script>
+
     <script>
         $(document).ready(function () {
             is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
@@ -80,10 +81,10 @@
             <li class="bold"> <a class="collapsible-header">Chapter</a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a href="#!">Main</a></li>
-                        <li><a href="#!">Officers</a></li>
-                        <li><a href="#!">Advisors</a></li>
-                        <li><a href="#!">Creed</a></li>
+                        <li><a href="tech-dept.html">Tech Department</a></li>
+                        <li><a href="officers.html">Officers</a></li>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="outreach.html"> Outreach</a></li>
                     </ul>
                 </div>
             </li>
@@ -121,34 +122,46 @@
         <div class="section" id="section1" data-anchor="about">
             <div class="container">
                 <div class="row">
-                    <div class="col s12 text-center">
-                        <div class="subheader-text slide active">What is Augmented Reality? </div>
-                        <div class="subheader-text2 slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra non nunc ac maximus. Nam commodo tincidunt mi in tincidunt. Fusce posuere sem non elementum blandit. Maecenas vitae leo quis ante elementum malesuada. Phasellus accumsan, sem ut gravida dapibus, libero nulla luctus dui, eu facilisis velit lorem a libero. Aenean tempus ligula vel maximus auctor. Quisque ipsum leo, fermentum at leo quis, maximus accumsan lacus. Nunc at est urna. Cras hendrerit nisl feugiat gravida tempus. Fusce sagittis accumsan velit, ac rutrum nibh maximus et.</div>
-                        <div class="subheader-text2 slide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra non nunc ac maximus. Nam commodo tincidunt mi in tincidunt. Fusce posuere sem non elementum blandit. Maecenas vitae leo quis ante elementum malesuada. Phasellus accumsan, sem ut gravida dapibus, libero nulla luctus dui, eu facilisis velit lorem a libero. Aenean tempus ligula vel maximus auctor. Quisque ipsum leo, fermentum at leo quis, maximus accumsan lacus. Nunc at est urna. Cras hendrerit nisl feugiat gravida tempus. Fusce sagittis accumsan velit, ac rutrum nibh maximus et.</div>
-                    </div>
+                    <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+                    <!-- Modal Structure -->
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                    <p>You have to include jQuery and Materialize JS + CSS for the modal to work. You can include it from <a href="http://materializecss.com/getting-started.html">CDN (getting started)</a>.
+                </div>
+            </div>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
                 </div>
             </div>
         </div>
-        <div class="section" id="section2" data-anchor="creation">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 text-center">
-                        <div class="subheader-text slide active"> Why is it important? What does the future hold? </div>
-                        <div class="subheader-text slide"> Test </div>
-                    </div>
+    </div>
+    </div>
+    <div class="section" id="section2" data-anchor="creation">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 text-center">
+                    <div class="subheader-text slide active"> Why is it important? What does the future hold? </div>
+                    <div class="subheader-text slide"> Test </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="section3" data-anchor="brief">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 text center">
-                        <div class="subheader-text slide active"> What are some dangers associated with Augmented Reality? </div>
-                        <div class="subheader-text slide"> Test </div>
-                    </div>
+    </div>
+    <div class="section" id="section3" data-anchor="brief">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 text center">
+                    <div class="subheader-text slide active"> What are some dangers associated with Augmented Reality? </div>
+                    <div class="subheader-text slide"> Test </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;"> <a href="#" class="waves-effect waves-light btn grey darken-3">Our Chapter</a> </div>
     <a href="#!" data-activates="slide-out" class="button-collapse">
@@ -156,6 +169,13 @@
     </a>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+       $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+    </script>
 </body>
 
 </html>
