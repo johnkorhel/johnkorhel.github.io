@@ -34,6 +34,11 @@
 .title-bar {
     padding: 5px;
     margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .section-title {
@@ -63,7 +68,7 @@
   top: 25px;
   right: 24px;
   z-index: 1003;
-  position: absolute;
+  position: fixed;
 }
 
 #nav-icon3 span {
