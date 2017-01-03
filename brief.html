@@ -51,6 +51,9 @@
             $('.collapsible').collapsible();
         });
     </script>
+    
+    
+  
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -69,6 +72,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+    
 
 <body>
     <ul id="slide-out" class="side-nav full">
@@ -129,6 +133,16 @@
                             </div>
                             <div class="card-action"> <a href="#">Click Here</a> </div>
                         </div>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -167,6 +181,14 @@
     <a href="#!" data-activates="slide-out" class="button-collapse">
         <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
     </a>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+    </script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
 </body>
