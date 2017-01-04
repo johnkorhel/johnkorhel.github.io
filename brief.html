@@ -54,6 +54,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.modal-trigger').leanModal();
+            $('modal-trigger').fadeham();
         });
     </script>
 
@@ -75,10 +76,12 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
 <body>
-    <ul id="slide-out" class="side-nav full">
+    <!--Menu-->
+    <ul id="slide-out" class="side-nav full" style="z-index: 1011;">
         <a id="logo-container" class="brand-logo">
             <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
         </a>
@@ -109,18 +112,27 @@
         </ul>
         </li>
     </ul>
-
+<!--Modals-->
     <div id="modal1" class="modal" style="">
+        <span id="x" class="modal-acton modal-close">&#xd7;</span>
+        <a href="#!" data-activates="slide-out" class="button-collapse">
+            <div id="nav-icon4"> <span></span> <span></span> <span></span> <span></span> </div>
+        </a>
         <div class="modal-content">
             <h4>What is Augmented Reality?</h4>
             <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class=" modal-action modal-close btn-flat">Agree</a>
         </div>
     </div>
 
     <div id="modal2" class="modal">
+        <span id="x" class="modal-acton modal-close">&#xd7;</span>
+
+        <a href="#!" data-activates="slide-out" class="button-collapse">
+            <div id="nav-icon4"> <span></span> <span></span> <span></span> <span></span> </div>
+        </a>
         <div class="modal-content">
             <h4>Importance of Augmented Reality</h4>
             <p>A bunch of text</p>
@@ -131,6 +143,10 @@
     </div>
 
     <div id="modal3" class="modal">
+        <span id="x" class="modal-acton modal-close">&#xd7;</span>
+        <a href="#!" data-activates="slide-out" class="button-collapse">
+            <div id="nav-icon4"> <span></span> <span></span> <span></span> <span></span> </div>
+        </a>
         <div class="modal-content">
             <h4>Dangers of Augmented Reality</h4>
             <p>A bunch of text</p>
@@ -140,6 +156,7 @@
         </div>
     </div>
 
+    <!--Start of the Page-->
     <div id="particles-js"></div>
     <div id="fullpage">
         <div class="section" id="section0">

@@ -189,7 +189,7 @@ canvas {
   height: 20px;
   top: 25px;
   right: 24px;
-  z-index: 1003;
+  z-index: 1002;
   position: fixed;
 }
 
@@ -223,3 +223,53 @@ canvas {
 }
 
 
+
+#nav-icon4 {
+  width: 30px;
+  height: 20px;
+  top: 25px;
+  right: 24px;
+  z-index: 1003;
+  position: fixed;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon4 span:nth-child(2),#nav-icon4 span:nth-child(3) {
+  top: 8px;
+}
+
+#nav-icon4 span:nth-child(4) {
+  top: 16px;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#x {
+    font-size: 75px;
+    color: indianred;
+    padding-left: 30px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+#x:hover {color: #cc0000;}
