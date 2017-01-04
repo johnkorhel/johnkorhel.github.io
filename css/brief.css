@@ -54,6 +54,13 @@ canvas {
     text-align: center;
 }
 
+.modal {
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 0;
+    top: 0px !important;
+}
+
 #slide-out {
     z-index: 1003;
     position: fixed !important;
@@ -214,3 +221,5 @@ canvas {
   width: 0%;
   left: 50%;
 }
+
+

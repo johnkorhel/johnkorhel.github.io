@@ -117,7 +117,7 @@
             hybrid: false,
 
             //scrolling
-            css3: false,
+            css3: true,
             scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,

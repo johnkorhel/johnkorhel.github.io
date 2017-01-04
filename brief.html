@@ -18,9 +18,9 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'creation', 'brief']
-                , recordHistory: true
-            , });
+                anchors: ['home', 'about', 'creation', 'brief'],
+                recordHistory: true,
+            });
         });
     </script>
     <script>
@@ -51,9 +51,12 @@
             $('.collapsible').collapsible();
         });
     </script>
-    
-    
-  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.modal-trigger').leanModal();
+        });
+    </script>
+
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -72,7 +75,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-    
+
 
 <body>
     <ul id="slide-out" class="side-nav full">
@@ -106,6 +109,37 @@
         </ul>
         </li>
     </ul>
+
+    <div id="modal1" class="modal" style="">
+        <div class="modal-content">
+            <h4>What is Augmented Reality?</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Importance of Augmented Reality</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Dangers of Augmented Reality</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
     <div id="particles-js"></div>
     <div id="fullpage">
         <div class="section" id="section0">
@@ -126,23 +160,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
-                        <div class="card">
-                            <div class="card-image"> <img src="img/Pokemon.jpg"> </div>
-                            <div class="card-content">
-                                <p>Learn more about what augmented reality is and current technologies that are being utilized.</p>
+                        <a class="modal-trigger" href="#modal1">
+                            <div class="card">
+                                <div class="card-image"> <img src="img/Pokemon.jpg"> </div>
+                                <div class="card-content">
+                                    <p style="color: black;">Learn more about what augmented reality is and current technologies that are being utilized.</p>
+                                </div>
+                                <div class="card-action"> <a class="modal-trigger" href="#modal1">Click Here</a> </div>
                             </div>
-                            <div class="card-action"> <a href="#">Click Here</a> </div>
-                        </div>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
-</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -151,13 +177,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
-                        <div class="card">
-                            <div class="card-image"> <img src="img/jet.jpg"> </div>
-                            <div class="card-content">
-                                <p>Learn about the importance of augmented reality and how it affects your everyday life.</p>
+                        <a class="modal-trigger" href="#modal2">
+                            <div class="card">
+                                <div class="card-image"> <img src="img/jet.jpg"> </div>
+                                <div class="card-content">
+                                    <p style="color: black;">Learn about the importance of augmented reality and how it affects your everyday life.</p>
+                                </div>
+                                <div class="card-action"> <a class="modal-trigger" href="#modal2">Click Here</a> </div>
+
                             </div>
-                            <div class="card-action"> <a href="#">Click Here</a> </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -166,13 +195,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
-                        <div class="card">
-                            <div class="card-image"> <img src="img/Firefighters.jpg"> </div>
-                            <div class="card-content">
-                                <p>What are the possible dangers associated with augmented reality and it's rapid implementation?</p>
+                        <a class="modal-trigger" href="#modal3">
+                            <div class="card">
+                                <div class="card-image"> <img src="img/Firefighters.jpg"> </div>
+                                <div class="card-content">
+                                    <p style="color: black;">What are the possible dangers associated with augmented reality and it's rapid implementation?</p>
+                                </div>
+                                <div class="card-action"> <a class="modal-trigger" href="#modal3">Click Here</a> </div>
                             </div>
-                            <div class="card-action"> <a href="#">Click Here</a> </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -181,14 +212,7 @@
     <a href="#!" data-activates="slide-out" class="button-collapse">
         <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
     </a>
-    
-    <script type="text/javascript">
-      $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-  });
 
-    </script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
 </body>
