@@ -183,56 +183,65 @@ canvas {
         font-size: 3em;
     }
 }
+
+
 /*Hamburger*/
+
 #nav-icon3 {
-  width: 30px;
-  height: 20px;
-  top: 25px;
-  right: 24px;
-  z-index: 1002;
-  position: fixed;
+    width: 30px;
+    height: 20px;
+    top: 25px;
+    right: 24px;
+    z-index: 1002;
+    position: fixed;
 }
 
 #nav-icon3 span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #FFFFFF;
-  border-radius: 0px;
-  opacity: 1;
-  left: 0;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
 }
 
 #nav-icon3 span:nth-child(1) {
-  top: 0px;
+    top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-  top: 8px;
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 8px;
 }
 
 #nav-icon3 span:nth-child(4) {
-  top: 16px;
+    top: 16px;
 }
 
 #nav-icon3.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
 
 #x {
     font-size: 75px;
     color: indianred;
     padding-left: 30px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
+
 #x:hover {
     color: #cc0000;
 }
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
