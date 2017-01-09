@@ -235,6 +235,11 @@ canvas {
     -webkit-transition: .5s;
     transition: .5s;
     float: right;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-top: -25px;
+ 
 }
 
 #x:hover {
@@ -246,6 +251,3 @@ body.modal-open {
     position: fixed;
 }
 
-.modal-content {
-    padding-top: 80px;
-}
