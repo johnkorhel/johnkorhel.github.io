@@ -229,12 +229,12 @@ canvas {
 #x {
     font-size: 75px;
     color: indianred;
-    padding-left: 30px;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
+    float: right;
 }
 
 #x:hover {
@@ -244,4 +244,8 @@ canvas {
 body.modal-open {
     overflow: hidden;
     position: fixed;
+}
+
+.modal-content {
+    padding-top: 80px;
 }
