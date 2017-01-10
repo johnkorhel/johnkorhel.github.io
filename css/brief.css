@@ -223,7 +223,7 @@ canvas {
 #nav-icon3.open span:nth-child(1) {
     top: 18px;
     width: 0%;
-    left: 50%;
+    left: 50%
 }
 
 #x {
@@ -252,3 +252,12 @@ body.modal-open {
     position: fixed;
 }
 
+.exit-btn {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: indianred;
+}
+
+.exit-btn:hover {
+    background-color: #cc0000;
+}
