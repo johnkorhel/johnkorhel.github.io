@@ -18,8 +18,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'creation', 'brief', 'history']
-                , recordHistory: true
+                anchors: ['home', 'about', 'creation', 'brief', 'history'],
+                navigation: true,
+				navigationPosition: 'right',
+                recordHistory: true,
+                navigationTooltips: ['Augmented Reality', 'What is it?', 'Importance','Dangers','History'],
+                continuousVertical: true
             , });
         });
     </script>
@@ -304,9 +308,11 @@
                 </div>
             </div>
         </div>
+    </div>
         <!--Start of the Page-->
         <div id="particles-js"></div>
         <div id="fullpage">
+           
             <div class="section" id="section0">
                 <div class="container">
                     <div class="row">
@@ -316,6 +322,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div data-menuanchor="about" class="glypharrow">
+                    <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a>
                 </div>
                 <div data-menuanchor="about" class="glypharrow">
                     <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"></a>
@@ -390,6 +399,7 @@
                 </div>
             </div>
         </div>
+        
         <a href="#!" data-activates="slide-out" class="button-collapse">
             <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
         </a>

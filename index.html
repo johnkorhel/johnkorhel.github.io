@@ -19,6 +19,10 @@
             $('#fullpage').fullpage({
                 anchors: ['home', 'about', 'creation', 'brief'],
                 recordHistory: true,
+                navigation: true,
+				navigationPosition: 'right',
+                navigationTooltips: ['Legend','TSA', 'This Site', 'Design Brief'],
+                continuousVertical: true
             });
         });
     </script>
@@ -116,7 +120,7 @@
                 </div>
             </div>
             <div data-menuanchor="about" class="glypharrow">
-                <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"></a>
+                <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a>
             </div>
         </div>
         <div class="section" id="section1" data-anchor="about">
