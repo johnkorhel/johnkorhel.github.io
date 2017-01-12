@@ -360,8 +360,24 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 600px){
-    #fp-nav {
-        visibility: hidden;
-    }
+@media only screen and (max-width: 600px) {
+  #fp-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #fp-nav {
+    display: none !important;
+  }
+}
+
+.border-img {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    max-width: 300px;
+}
+
+.flow-text {
+    font-size: 20px;
 }
