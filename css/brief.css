@@ -359,3 +359,9 @@ body.modal-open {
     left: 0;
   }
 }
+
+@media screen and (max-width: 600px){
+    #fp-nav {
+        visibility: hidden;
+    }
+}

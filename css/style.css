@@ -162,6 +162,11 @@ canvas {
 }
 
 
+@media screen and (max-width: 600px){
+    #fp-nav {
+        visibility: hidden;
+    }
+}
 
 
 /*Hamburger*/
