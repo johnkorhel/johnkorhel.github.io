@@ -145,3 +145,9 @@ html {
 .lhsfooter{
     background-color: #1565C0 !important;
 }
+.lhscrumbs{
+    color: #1565C0 !important;
+}
+.lhscrumbs:before{
+    color: #1565C0 !important;
+}
