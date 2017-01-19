@@ -262,9 +262,6 @@ body.modal-open {
     background-color: #cc0000;
 }
 
-
-
-
 /*Timeline*/
 
 .timeline {
@@ -380,4 +377,9 @@ body.modal-open {
 
 .flow-text {
     font-size: 20px;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
 }
