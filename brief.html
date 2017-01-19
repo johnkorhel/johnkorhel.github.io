@@ -18,12 +18,13 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['ar', 'about', 'importance', 'dangers', 'history','resources']
+                anchors: ['ar', 'about', 'importance', 'dangers', 'history', 'resources']
                 , navigation: true
                 , navigationPosition: 'right'
                 , recordHistory: true
-                , navigationTooltips: ['Augmented Reality', 'What is it?', 'Importance', 'Dangers', 'History','Resources']
+                , navigationTooltips: ['Augmented Reality', 'What is it?', 'Importance', 'Dangers', 'History', 'Resources']
                 , continuousVertical: true
+                , menu: '#menu'
             , });
         });
     </script>
@@ -53,51 +54,28 @@
                 closeOnClick: true
             });
             $('.collapsible').collapsible();
-            
             $('.modal-trigger').leanModal();
             $('modal-trigger').fadeham();
         });
     </script>
     <script>
-       $(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
+        $('#fullpage').fullpage({
+            afterLoad: function (anchorLink, index) {
+                //section 2 loaded
+                if (index == 2) {
+                    //adding active class to the 1st element in the slide menu
+                    $('#limenu').find('li').eq(0).addClass('active');
+                }
+            }
+            , //
+            afterLoad: function (anchorLink, index) {
+                //only for slides in section 2
+                if (index == 2) {
+                    $('#limenu').find('li.active').removeClass('active');
+                    $('#limenu').find('li').eq(slideIndex).addClass('active');
+                }
+            }
         });
-    });
-});
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#side-nv li').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#side-nv ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
     </script>
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
@@ -121,8 +99,7 @@ function onScroll(event){
 
 <body>
     <!--Menu-->
-    <header class="side-nv">
-       <ul id="slide-out" class="side-nav full" style="z-index: 1011;">
+    <ul id="slide-out" class="side-nav full" style="z-index: 1011;">
         <a id="logo-container" class="brand-logo">
             <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
         </a>
@@ -135,24 +112,23 @@ function onScroll(event){
                         <li><a href="officers.html">Officers</a></li>
                         <li><a href="awards.html">Awards</a></li>
                         <li><a href="community-outreach.html"> Outreach</a></li>
-                        </li>
-                    </ul>
-                </div>
+            </li>
+            </ul>
+            </div>
             <li class="bold"> <a class="active collapsible-header">Brief</a>
                 <div class="collapsible-body">
-                    <ul>
-                        <li><a href="brief.html#ar">Augmented Reality</a></li>
-                        <li class="about-add"><a href="brief.html#about">What is AR?</a></li>
-                        <li><a href="brief.html#importance">Importance of AR</a></li>
-                        <li><a href="brief.html#dangers">Dangers of AR</a></li>
-                        <li><a href="brief.html#history">History of AR</a></li>
-                        <li><a href="resources.html">Resources</a></li>
+                    <ul id="menu">
+                        <li data-menuanchor="ar" class="active"><a href="brief.html#ar">Augmented Reality</a></li>
+                        <li data-menuanchor="about"><a href="brief.html#about">What is AR?</a></li>
+                        <li data-menuanchor="importance"><a href="brief.html#importance">Importance of AR</a></li>
+                        <li data-menuanchor="dangers"><a href="brief.html#dangers">Dangers of AR</a></li>
+                        <li data-menuanchor="history"><a href="brief.html#history">History of AR</a></li>
+                        <li data-menuanchor="resources"><a href="resources.html">Resources</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </ul>
-    </header>
     <!--Modals-->
     <div class="containter">
         <div class="row">
@@ -165,49 +141,36 @@ function onScroll(event){
                     <p class="flow-text col s12"><b>AR Gaming</b> - The most prominent example of AR in our society is gaming. There are not too many games out as it stands, and AR is commonly mixed up with VR. The reason AR games are so hard to create is because developers need to base their design and levels around totally different environments depending on where the user is. One of the most prominent and expert uses of AR is in the popular game, Pokemon GO.</p>
                     <p class="flow-text col s12">It is important to remember that AR and VR are two completely different things. The two both immerse the user, but AR keeps the user in touch with the real world, while VR puts the user into a completely virtual world. </p>
                     <ul class="col s12 flow-text browser-default"><b>Today's Uses</b> - There are many uses for AR in today's society. The most well know are products like Google Glasses and Microsoft's Hololens. However there are others out there like for fighter pilots or in cars. All of these are equally impressive and useful.
-                    <br>
+                        <br>
                         <li class="col s11 flow-text" style="margin-left: 20px; margin-top: 10px;">Google Glasses are some of the most well know and for good reason. When they were first released they quickly got a reputation for being lightweight and like glasses. Although Google Glasses were innovative and neat they didn't still in the spotlight for long because they aren't too applicable to the normal consumer who uses would use their mobile device. With some more functionality and Google Glasses could definitely make a comeback.</li>
                         <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">A newer option that has just been released is Microsoft's Hololens. The Hololens are very similar to the Google Glasses but they have a little more functionality and alot more bulk become visor-like. The Hololens have a lot of potential towards advertising, game devolopment, game playing, and just general use.</li>
                         <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">Another well know AR use is in cars. For the past several years cars have started to use Augmented Reality to help drivers. The most common application is in backing up with the lines that appear on the dashboard screen telling the driver where their going and the distance it is. However there has been some recent news when Toyota patented an Augmented Reality Windshield in 2016 allowing for a whole new avenue of technology to be produced and allowing the driver to see speed, lane drifting, blind spots...</li>
-                    </ul>
-                    <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
+                    </ul> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
             </div>
             <div id="importancemodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
                 <div class="modal-content">
                     <h4 class="col s12">Importance of Augmented Reality</h4>
                     <p class="flow-text col s12">There are many reasons to use AR in everyday life beyond the current trending tech </p>
-                    <p class="col s12 flow-text"><b>Mobility</b> - Any job that is on the move can really benefit from a piece of AR    tech. They can have a mobile dashboard in front of their face almost anywhere they go, while also being able to perform their job to the fullest of their ability. 
-                    </p>
+                    <p class="col s12 flow-text"><b>Mobility</b> - Any job that is on the move can really benefit from a piece of AR tech. They can have a mobile dashboard in front of their face almost anywhere they go, while also being able to perform their job to the fullest of their ability. </p>
                     <p class="col s12 flow-text"><b>Hands Free</b> - If the user is using something like Google Class, then AR is essentially hands free. They are able to perform all necessary functions in their everyday life much more efficiently. The user can do most anything while retaining full situational awareness.</p>
-                    <p class="col s12 flow-text"><b>Visual Alerts and Reminders</b> - Alerts to take your medicine or get to the meeting on time can save your life both literally and figuratively, however with our phones and even smart watches we sometimes don’t notice when they go off. We improving Augmented Reality and devices like Google Glasses or Microsoft's Hololens you can’t miss the alerts. If you were to wear these devices the alert would pop up on the side of the screen allowing for you to automatically notice it rather than have the chance of it being missed and forgotten.
-                    </p>
+                    <p class="col s12 flow-text"><b>Visual Alerts and Reminders</b> - Alerts to take your medicine or get to the meeting on time can save your life both literally and figuratively, however with our phones and even smart watches we sometimes don’t notice when they go off. We improving Augmented Reality and devices like Google Glasses or Microsoft's Hololens you can’t miss the alerts. If you were to wear these devices the alert would pop up on the side of the screen allowing for you to automatically notice it rather than have the chance of it being missed and forgotten. </p>
                     <p class="col s12 flow-text"><b>Calls</b> - The world went wild when the bluetooth headset was made available to the consumers because people could now talk to someone on the phone without having to hold the phone which can help in a variety of situations like when driving. With improving wearable devices for Augmented Reality you can call someone just by talking to your device and then have a small speaker near your ear to communicate with them completely hands free revolutionizing calling in cramped or undesirable locations.</p>
-                    <p class="col s12 flow-text"><b>Game Design</b> - Up till now game design has been a completely inside the computer kind of job. Now using 3-D game development programs like Unity or Unreal Engine you could wear a an Augmented Reality Headset and go into your game’s world. From there you can craft the environment in a completely new way, from the inside.
-                    </p>
-                    <p class="col s12 flow-text"><b>Advertising</b> -  Almost no one likes ads that pop up on apps or billboards or on your computer, but for advertising companies Augmented Reality is a gold mine. If enough people could wear an augmented reality headset in the real world companies could have special ads on billboards, trucks, windows… that when you look at them could come to life. This new advertisements could be interactive and interesting drawing in the consumer. For the advertising companies at least it could be very useful to get awareness and hype for their products.
-                    </p>
-                    <p class="col s12 flow-text"><b>The Future</b> - What does the future hold for Augmented Reality? Many shows like Star Trek think you could create an advanced video game that you can go inside changing your surrounds (holodeck), or others like Continuum believe that we’ll be able to get contacts with a neural link that can show you anything from the heartbeat of a person next to you to replaying video just by thinking about it. Suffice to say any of these projects are far from reality but are getting closer with each passing day showing the potential for AR is exponential and can change the world as we know it.
-                    </p> 
-                    <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
+                    <p class="col s12 flow-text"><b>Game Design</b> - Up till now game design has been a completely inside the computer kind of job. Now using 3-D game development programs like Unity or Unreal Engine you could wear a an Augmented Reality Headset and go into your game’s world. From there you can craft the environment in a completely new way, from the inside. </p>
+                    <p class="col s12 flow-text"><b>Advertising</b> - Almost no one likes ads that pop up on apps or billboards or on your computer, but for advertising companies Augmented Reality is a gold mine. If enough people could wear an augmented reality headset in the real world companies could have special ads on billboards, trucks, windows… that when you look at them could come to life. This new advertisements could be interactive and interesting drawing in the consumer. For the advertising companies at least it could be very useful to get awareness and hype for their products. </p>
+                    <p class="col s12 flow-text"><b>The Future</b> - What does the future hold for Augmented Reality? Many shows like Star Trek think you could create an advanced video game that you can go inside changing your surrounds (holodeck), or others like Continuum believe that we’ll be able to get contacts with a neural link that can show you anything from the heartbeat of a person next to you to replaying video just by thinking about it. Suffice to say any of these projects are far from reality but are getting closer with each passing day showing the potential for AR is exponential and can change the world as we know it. </p> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
             </div>
             <div id="dangermodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
                 <div class="modal-content">
                     <h4 class="col s12">Dangers of Augmented Reality</h4>
-                    <p class="flow-text col s12"><b>Distractions</b> - In the world of technology there are always new and innovative tech that is coming out all the time. Along with these new technologies there come new dangers that can affect every person that uses the tech. With AR barely on the market there are still many studies that need to be done with it, however the information currently available we do know that Augmented Reality can cause heavy distractions. Just like texting on your phone you're paying more attention to the device and what it shows you rather than the world around you. Augmented Reality can cause you to become distracted with the text on the screen or the images that pop up making you pay less attention to your surroundings potentially putting you in danger. Imagine a scenario where you’re walking down the street and you get a funny meme from your friend, you open up the image and it fills the screen (google glasses) as you’re reading text on the picture you accidentally walk into the street where a car is coming.</p> 
+                    <p class="flow-text col s12"><b>Distractions</b> - In the world of technology there are always new and innovative tech that is coming out all the time. Along with these new technologies there come new dangers that can affect every person that uses the tech. With AR barely on the market there are still many studies that need to be done with it, however the information currently available we do know that Augmented Reality can cause heavy distractions. Just like texting on your phone you're paying more attention to the device and what it shows you rather than the world around you. Augmented Reality can cause you to become distracted with the text on the screen or the images that pop up making you pay less attention to your surroundings potentially putting you in danger. Imagine a scenario where you’re walking down the street and you get a funny meme from your friend, you open up the image and it fills the screen (google glasses) as you’re reading text on the picture you accidentally walk into the street where a car is coming.</p>
                     <div class="col s12 m12 l6 offset-l3">
                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YJg02ivYzSs" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <!--<img class="col s12 l6 m6 responsive-img border-img" src="img/distracted.jpg"> 
                     <img class="col s12 l6 m6 responsive-img border-img" src="img/googleglassdistracting.jpg">-->
-                    <p class="flow-text col s12">Distractions are a real problem, for fighter pilots they have minimal displays with just information they need to know and no images that could distract them. Pilots also go through extensive training to be able to understand this information quickly and pay attention to their surroundings. On in informal study several hundred people used google glasses to see how their attention and sight was impaired. It was discovered that 5 to 10 percent struggle while using glasses to focus on objects for 20 seconds before giving up. Then 25 percent of people had difficulty focusing but eventually were able to handle google glasses. This data shows that at least initially google glasses impairs your ability to focus on your surroundings. Focus is not the only problem however, with all the images and text the pops up on the screen your vision is obscured so that you might not notice as much in your surroundings like a car. This can happen when a notification pops up on the side of the screen. You might ignore it as you cross the street but the danger is still present because you are consciously aware of the notification and are probably thinking about it, this can cause you to be distracted and potentially cause you to hit something.</p> 
-                    <img class="col s12 l6 m6 responsive-img border-img" src="img/pilotar.jpg">
-                    <img class="col s12 l6 m6 responsive-img border-img" src="img/hololens2.jpg">
-                    <p class="flow-text col s12"><b>Vision</b> - There are several things that you have to consider when using products like google glasses such as peripheral vision, central vision, and your focus. Peripheral vision is much more essential than you might think towards your ability to recognize what's happening around you. Peripheral vision gives you sensory information like rough estimates of how far objects are from you, estimate of movement around you. Interfering with peripheral vision can cause you to misjudge the distance of objects or the relative motion they have causing you to bump into objects or stumble. Central vision is key to knowing what's happening around you but peripheral vision is essential to knowing what is coming up.</p> 
-                    <img class="col s12 l6 m6 responsive-img border-img" src="img/focus.jpg">
-                    <img class="col s12 l6 m6 responsive-img border-imgn" src="img/central-vision.jpg">
-                    <div class="flow-text col s12" style="margin-top: 20px;"></div>
-                    <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> 
-                </div>
+                    <p class="flow-text col s12">Distractions are a real problem, for fighter pilots they have minimal displays with just information they need to know and no images that could distract them. Pilots also go through extensive training to be able to understand this information quickly and pay attention to their surroundings. On in informal study several hundred people used google glasses to see how their attention and sight was impaired. It was discovered that 5 to 10 percent struggle while using glasses to focus on objects for 20 seconds before giving up. Then 25 percent of people had difficulty focusing but eventually were able to handle google glasses. This data shows that at least initially google glasses impairs your ability to focus on your surroundings. Focus is not the only problem however, with all the images and text the pops up on the screen your vision is obscured so that you might not notice as much in your surroundings like a car. This can happen when a notification pops up on the side of the screen. You might ignore it as you cross the street but the danger is still present because you are consciously aware of the notification and are probably thinking about it, this can cause you to be distracted and potentially cause you to hit something.</p> <img class="col s12 l6 m6 responsive-img border-img" src="img/pilotar.jpg"> <img class="col s12 l6 m6 responsive-img border-img" src="img/hololens2.jpg">
+                    <p class="flow-text col s12"><b>Vision</b> - There are several things that you have to consider when using products like google glasses such as peripheral vision, central vision, and your focus. Peripheral vision is much more essential than you might think towards your ability to recognize what's happening around you. Peripheral vision gives you sensory information like rough estimates of how far objects are from you, estimate of movement around you. Interfering with peripheral vision can cause you to misjudge the distance of objects or the relative motion they have causing you to bump into objects or stumble. Central vision is key to knowing what's happening around you but peripheral vision is essential to knowing what is coming up.</p> <img class="col s12 l6 m6 responsive-img border-img" src="img/focus.jpg"> <img class="col s12 l6 m6 responsive-img border-imgn" src="img/central-vision.jpg">
+                    <div class="flow-text col s12" style="margin-top: 20px;"></div> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
             </div>
             <div id="historymodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
                 <div class="modal-content">
@@ -393,9 +356,6 @@ function onScroll(event){
                 </div>
             </div>
             <div data-menuanchor="about" class="glypharrow"> <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a> </div>
-            <div data-menuanchor="about" class="glypharrow">
-                <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"></a>
-            </div>
         </div>
         <div class="section" id="section1" data-anchor="about">
             <div class="container">
@@ -488,7 +448,6 @@ function onScroll(event){
     </a>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    
 </body>
 
 </html>
