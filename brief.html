@@ -58,25 +58,6 @@
             $('modal-trigger').fadeham();
         });
     </script>
-    <script>
-        $('#fullpage').fullpage({
-            afterLoad: function (anchorLink, index) {
-                //section 2 loaded
-                if (index == 2) {
-                    //adding active class to the 1st element in the slide menu
-                    $('#limenu').find('li').eq(0).addClass('active');
-                }
-            }
-            , //
-            afterLoad: function (anchorLink, index) {
-                //only for slides in section 2
-                if (index == 2) {
-                    $('#limenu').find('li.active').removeClass('active');
-                    $('#limenu').find('li').eq(slideIndex).addClass('active');
-                }
-            }
-        });
-    </script>
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -104,7 +85,16 @@
             <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
         </a>
         <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header" href="index.html">Intro</a></li>
+            <li class="bold"><a class="collapsible-header">Intro</a>
+                <div class="collapsible-body">
+                    <ul id="menu">
+                        <li data-menuanchor="Legend"><a href="index.html#Legend">Legend</a></li>
+                        <li data-menuanchor="TSA"><a href="index.html#TSA">TSA</a></li>
+                        <li data-menuanchor="site"><a href="index.html#site">This Site</a></li>
+                        <li data-menuanchor="brief&chapter"><a href="index.html#brief&chapter">Brief and Chapter Links</a></li>
+                    </ul>
+                </div>
+            </li>
             <li class="bold"> <a class="collapsible-header">Chapter</a>
                 <div class="collapsible-body">
                     <ul>
@@ -112,9 +102,9 @@
                         <li><a href="officers.html">Officers</a></li>
                         <li><a href="awards.html">Awards</a></li>
                         <li><a href="community-outreach.html"> Outreach</a></li>
+                    </ul>
+                </div>
             </li>
-            </ul>
-            </div>
             <li class="bold"> <a class="active collapsible-header">Brief</a>
                 <div class="collapsible-body">
                     <ul id="menu">
@@ -166,8 +156,6 @@
                     <div class="col s12 m12 l6 offset-l3">
                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YJg02ivYzSs" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <!--<img class="col s12 l6 m6 responsive-img border-img" src="img/distracted.jpg"> 
-                    <img class="col s12 l6 m6 responsive-img border-img" src="img/googleglassdistracting.jpg">-->
                     <p class="flow-text col s12">Distractions are a real problem, for fighter pilots they have minimal displays with just information they need to know and no images that could distract them. Pilots also go through extensive training to be able to understand this information quickly and pay attention to their surroundings. On in informal study several hundred people used google glasses to see how their attention and sight was impaired. It was discovered that 5 to 10 percent struggle while using glasses to focus on objects for 20 seconds before giving up. Then 25 percent of people had difficulty focusing but eventually were able to handle google glasses. This data shows that at least initially google glasses impairs your ability to focus on your surroundings. Focus is not the only problem however, with all the images and text the pops up on the screen your vision is obscured so that you might not notice as much in your surroundings like a car. This can happen when a notification pops up on the side of the screen. You might ignore it as you cross the street but the danger is still present because you are consciously aware of the notification and are probably thinking about it, this can cause you to be distracted and potentially cause you to hit something.</p> <img class="col s12 l6 m6 responsive-img border-img" src="img/pilotar.jpg"> <img class="col s12 l6 m6 responsive-img border-img" src="img/hololens2.jpg">
                     <p class="flow-text col s12"><b>Vision</b> - There are several things that you have to consider when using products like google glasses such as peripheral vision, central vision, and your focus. Peripheral vision is much more essential than you might think towards your ability to recognize what's happening around you. Peripheral vision gives you sensory information like rough estimates of how far objects are from you, estimate of movement around you. Interfering with peripheral vision can cause you to misjudge the distance of objects or the relative motion they have causing you to bump into objects or stumble. Central vision is key to knowing what's happening around you but peripheral vision is essential to knowing what is coming up.</p> <img class="col s12 l6 m6 responsive-img border-img" src="img/focus.jpg"> <img class="col s12 l6 m6 responsive-img border-imgn" src="img/central-vision.jpg">
                     <div class="flow-text col s12" style="margin-top: 20px;"></div> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
@@ -362,7 +350,7 @@
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
                         <a class="modal-trigger" href="#armodal">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image"> <img src="img/Pokemon.jpg"> </div>
                                 <div class="card-content">
                                     <p style="color: black;">Learn more about what augmented reality is and current technologies that are being utilized.</p>
@@ -379,7 +367,7 @@
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
                         <a class="modal-trigger" href="#importancemodal">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image"> <img src="img/jet.jpg"> </div>
                                 <div class="card-content">
                                     <p style="color: black;">Learn about the importance of augmented reality and how it affects your everyday life.</p>
@@ -396,7 +384,7 @@
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
                         <a class="modal-trigger" href="#dangermodal">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image"> <img src="img/Firefighters.jpg"> </div>
                                 <div class="card-content">
                                     <p style="color: black;">What are the possible dangers associated with augmented reality and it's rapid implementation?</p>
@@ -413,7 +401,7 @@
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
                         <a class="modal-trigger" href="#historymodal">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image"> <img src="img/timeline/sutherland.jpg"> </div>
                                 <div class="card-content">
                                     <p style="color: black;">What is the history behind the groundbreaking technology of Augmented Reality?</p>
@@ -430,7 +418,7 @@
                 <div class="row">
                     <div class="col s12 m6 offset-m3">
                         <a href="resources.html">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image"> <img src="img/resources.jpg"> </div>
                                 <div class="card-content">
                                     <p style="color: black;">The resources that went went into developing this website.</p>

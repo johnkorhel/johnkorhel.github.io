@@ -21,8 +21,9 @@
                 recordHistory: true,
                 navigation: true,
 				navigationPosition: 'right',
-                navigationTooltips: ['Legend','TSA', 'This Site', 'Design Brief'],
-                continuousVertical: true
+                navigationTooltips: ['Legend','TSA', 'This Site', 'Design Brief & Chapter'],
+                continuousVertical: true, 
+                menu: '#menu'
             });
         });
     </script>
@@ -79,7 +80,16 @@
             <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
         </a>
         <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="active collapsible-header" href="index.html">Intro</a></li>
+            <li class="bold"><a class="active collapsible-header">Intro</a>
+                <div class="collapsible-body">
+                    <ul id="menu">
+                        <li data-menuanchor="Legend" class="active"><a href="index.html#Legend">Legend</a></li>
+                        <li data-menuanchor="TSA"><a href="index.html#TSA">TSA</a></li>
+                        <li data-menuanchor="site"><a href="index.html#site">This Site</a></li>
+                        <li data-menuanchor="brief&chapter"><a href="index.html#brief&chapter">Brief and Chapter Links</a></li>
+                    </ul>
+                </div>
+            </li>
             <li class="bold"> <a class="collapsible-header">Chapter</a>
                 <div class="collapsible-body">
                     <ul>
@@ -92,13 +102,13 @@
                 </div>
             <li class="bold"> <a class="collapsible-header">Brief</a>
                 <div class="collapsible-body">
-                    <ul>
-                        <li><a href="brief.html#ar">Augmented Reality</a></li>
-                        <li><a href="brief.html#about">What is AR?</a></li>
-                        <li><a href="brief.html#importance">Importance of AR</a></li>
-                        <li><a href="brief.html#dangers">Dangers of AR</a></li>
-                        <li><a href="brief.html#history">History of AR</a></li>
-                        <li><a href="resources.html">Resources</a></li>
+                    <ul id="menu">
+                        <li data-menuanchor="ar"><a href="brief.html#ar">Augmented Reality</a></li>
+                        <li data-menuanchor="about"><a href="brief.html#about">What is AR?</a></li>
+                        <li data-menuanchor="importance"><a href="brief.html#importance">Importance of AR</a></li>
+                        <li data-menuanchor="dangers"><a href="brief.html#dangers">Dangers of AR</a></li>
+                        <li data-menuanchor="history"><a href="brief.html#history">History of AR</a></li>
+                        <li data-menuanchor="resources"><a href="resources.html">Resources</a></li>
                     </ul>
                 </div>
             </li>
@@ -118,7 +128,7 @@
                 </div>
             </div>
             <div data-menuanchor="about" class="glypharrow">
-                <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a>
+                <a style="color: white;" href="#TSA" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a>
             </div>
         </div>
         <div class="section" id="section1" data-anchor="about">
