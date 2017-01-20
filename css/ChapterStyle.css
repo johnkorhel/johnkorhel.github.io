@@ -151,3 +151,8 @@ html {
 .lhscrumbs:before{
     color: #1565C0 !important;
 }
+
+
+.border-img {
+    margin-bottom: 15px;
+}
