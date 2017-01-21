@@ -357,13 +357,7 @@ body.modal-open {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #fp-nav {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px), screen and (max-height: 400px) {
   #fp-nav {
     display: none !important;
   }
@@ -382,4 +376,10 @@ body.modal-open {
 .video {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media only screen and (max-height: 400px) {
+    .card-image {
+        display: none;
+    }
 }
