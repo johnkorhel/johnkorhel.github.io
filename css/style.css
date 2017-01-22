@@ -162,12 +162,11 @@ canvas {
 }
 
 
-@media only screen and (max-width: 700px), screen and (max-height: 400px) {
+@media only screen and (max-width: 414px), screen and (max-height: 414px) {
   #fp-nav {
     display: none !important;
   }
 }
-
 
 /*Hamburger*/
 #nav-icon3 {
