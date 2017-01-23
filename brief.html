@@ -58,6 +58,11 @@
             $('modal-trigger').fadeham();
         });
     </script>
+    <script type="text/javascript">
+        $('#modal-video').on('closeModal', function () {
+            $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
+        });
+    </script>
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -131,7 +136,7 @@
                     <p class="flow-text col s12"><b>AR Browsers</b> - AR Browsers are simple and lightweight phone and tablet applications that absolutely transform the world around the user. Have you ever wondered how large the Empire State Building is? Just snap a picture with your phone and you’ll get the cost of construction, number of employees, and the exact height. </p>
                     <p class="flow-text col s12"><b>AR Gaming</b> - The most prominent example of AR in our society is gaming. There are not too many games out as it stands, and AR is commonly mixed up with VR. The reason AR games are so hard to create is because developers need to base their design and levels around totally different environments depending on where the user is. One of the most prominent and expert uses of AR is in the popular game, Pokemon GO.</p>
                     <p class="flow-text col s12">It is important to remember that AR and VR are two completely different things. The two both immerse the user, but AR keeps the user in touch with the real world, while VR puts the user into a completely virtual world. </p>
-                    <div class="center-align">
+                    <div class="center-align" id="modal-video">
                         <iframe class="video" id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/09vxKN1zLNI" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <ul class="col s12 flow-text browser-default"><b>Today's Uses</b> - There are many uses for AR in today's society. The most well know are products like Google Glasses and Microsoft's Hololens. However there are other products out there for fighter pilots, in cars and many others. All of these are equally impressive and useful.
