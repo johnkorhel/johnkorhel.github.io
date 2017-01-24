@@ -27,6 +27,8 @@
                 closeOnClick: true
             });
             $('.collapsible').collapsible();
+            $('.modal-trigger').leanModal();
+            $('modal-trigger').fadeham();
         });
     </script>
 </head>
@@ -89,6 +91,26 @@
             </li>
         </ul>
     </ul>
+    <!--Modals-->
+    <div id="tawzermodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
+        <div class="modal-content">
+            <h4 class="col s12">Debbie Tawzer</h4>
+            <p class="flow-text col s12">Contact Info:<span class="flow-text light-blue-text text-darken-3"> datawzer@dcsdk12.org</span></p>
+            <p class="flow-text col s12">About: <span class="flow-text light-blue-text text-darken-3">Mrs. Tawzer has been a teacher at Legend High School for several years and has helped her students win countless TSA events.</span></p>
+        </div>
+    </div>
+    <div id="stasiakmodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
+        <div class="modal-content">
+            <h4 class="col s12">Derek Stasiak</h4>
+            <p class="flow-text col s12">Contact Info:<span class="flow-text light-blue-text text-darken-3"> dstasiak@dcsdk12.org</span></p>
+            <p class="flow-text col s12">About: <span class="flow-text light-blue-text text-darken-3">Mr.Stasiak has been teaching at Legend High School for several years as a Computer Science teacher allowing students to learn the skills they need to succeed in TSA. He teaches a variety of computer science courses and encourages countless students to pursue careers and compete in events related to computer science. He is also an advisor to the BEST Robotics team which took 3rd place at State in 2016.</span></p>
+            <div class="modal-footer hide-on-med-and-up">
+                <a class="waves-effect waves-light btn modal-action modal-close exit-btn col s12">Close</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Page Start-->
     <script>
         $(document).ready(function () {
             $(".trans--grow-200px").addClass("grow-200px");
@@ -115,26 +137,32 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 m4">
-                <img class="responsive-img center-block z-depth-2 animated fadeIn" style="border: 0px solid darkblue; border-radius: 0px;" src="img/tawzer.jpg">
-                <hr class="trans--grow-150px">
-                <h4 class="center-align">Debbie Tawzer</h4>
-            </div>
-            <div class="col s12 m8">
-                <p class="flow-text light-blue-text text-darken-3">Mrs. Tawzer has been a teacher at Legend High School for several years and has helped her students win countless TSA events.</p>
+            <div class="col s12 m6 offset-m3">
+                <div class="card horizontal hoverable modal-trigger" href="#tawzermodal">
+                    <div class="card-image"> <img class="responsive-img" style="border: 0px solid darkblue; border-radius: 0px;" src="img/tawzer.jpg"> </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p class="flow-text">Debbie Tawzer</p>
+                        </div>
+                        <div class="card-action"> <a class="modal-trigger" href="#tawzermodal">Click Here</a> </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col s12 m4">
-                <img class="responsive-img center-block z-depth-2 animated fadeIn" style="border: 0px solid darkblue; border-radius: 0px; max-width: 50%;" src="img/stasiak.jpg">
-                <hr class="trans--grow-150px">
-                <h4 class="center-align">Derek Stasiak</h4>
-            </div>
-            <div class="col s12 m8">
-                <p class="flow-text light-blue-text text-darken-3">Mr.Stasiak has been teaching at Legend High School for several years as a Computer Science teacher allowing students to learn the skills they need to succeed in TSA. He teaches a variety of computer science courses and encourages countless students to pursue careers and compete in events related to computer science. He is also an advisor to the BEST Robotics team which took 3rd place at State in 2016.</p>
+            <div class="col s12 m6 offset-m3">
+                <div class="card horizontal hoverable modal-trigger" href="#stasiakmodal">
+                    <div class="card-image"> <img class="responsive-img" style="border: 0px solid darkblue; border-radius: 0px;" src="img/stasiak.jpg"> </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p class="flow-text">Derek Stasiak</p>
+                        </div>
+                        <div class="card-action"> <a class="modal-trigger" href="#stasiakmodal">Click Here</a> </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

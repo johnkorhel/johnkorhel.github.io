@@ -162,3 +162,39 @@ html {
         padding-right: 100px;
     }
 }
+
+#x {
+    font-size: 75px;
+    color: indianred;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    float: right;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    padding-right: 20px;
+    margin-top: -20px;
+ 
+}
+
+#x:hover {
+    color: #cc0000;
+}
+
+@media screen and (min-width: 375px) {
+    #x {
+        padding-left: 20px;
+    }
+}
+
+.exit-btn {
+    margin-top: 20px;
+    background-color: indianred;
+}
+
+.exit-btn:hover {
+    background-color: #cc0000;
+}
