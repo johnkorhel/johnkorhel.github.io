@@ -2,20 +2,35 @@
 <html>
 
 <head>
-    <titile>Resources</titile>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tech Department</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Materialize.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/materialize.css">
+    
     <link rel="stylesheet" type="text/css" href="css/ChapterStyle.css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script>
+   
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.button-collapse').sideNav({
+                closeOnClick: true
+            });
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <script>
         $(document).ready(function () {
             is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
             is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
@@ -35,14 +50,6 @@
             }
         });
     </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.button-collapse').sideNav({
-                closeOnClick: true
-            });
-            $('.collapsible').collapsible();
-        });
-    </script>
 </head>
 <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -60,8 +67,7 @@
 <link rel="manifest" href="/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<meta name="theme-color" content="#1565c0">
 
 <body>
     <!--Menu-->
@@ -148,7 +154,6 @@
                 <p>Many of Legend's TSA members go to Mr. Stasiak's room to work on their projects as well.</p>
                 <img class="col s10 l6 m6 offset-s1 responsive-img border-img" src="img/tawzer-room.jpg"> 
                 <img class="col s10 l6 m6 offset-s1 responsive-img border-img" src="img/stasiak-room.jpg">
-                <div class="row">
                 <img class="col s10 l6 m6 offset-s1 responsive-img border-img" src="img/Student1.jpg">
                 <img class="col s10 l6 m6 offset-s1 responsive-img border-img" src="img/Student2.jpg">
             </div>
