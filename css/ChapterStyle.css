@@ -138,10 +138,10 @@
     font-weight: bold;
 }
 
-/*keeps scrollbar from disappearing*/
+/*keeps scrollbar from disappearing
 html {
        overflow-y: scroll;
-}
+}*/
 .lhsfooter{
     background-color: #1565C0 !important;
 }
@@ -197,4 +197,9 @@ html {
 
 .exit-btn:hover {
     background-color: #cc0000;
+}
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
 }
