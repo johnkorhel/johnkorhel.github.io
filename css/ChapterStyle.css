@@ -203,3 +203,8 @@ body.modal-open {
     overflow: hidden;
     position: fixed;
 }
+
+.link-anchor{
+    padding-top: 65px;
+    margin-top: -65px;
+}
