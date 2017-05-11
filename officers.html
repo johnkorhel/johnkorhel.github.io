@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="css/ChapterStyle.css" />
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="css/iziModal.css"/>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -28,6 +30,19 @@
             });
             $('.collapsible').collapsible();
             $('.modal-trigger').leanModal();
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).on('click', '.trigger', function (event) {
+            event.preventDefault();
+            $('#modal-name').iziModal('open');
+        });
+
+        $("#modal-name").iziModal({
+            overlayClose: true,
+            width: 600,
+            autoOpen: false,
+            overlayColor: 'rgba(0, 0, 0, 0.6)',
         });
     </script>
 </head>
@@ -90,18 +105,7 @@
             </li>
         </ul>
     </ul>
-     <div class="fixed-action-btn horizontal hide-on-small-only ">
-    <a class="btn-floating btn-large blue darken-3">
-      <i class="large material-icons">dashboard</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        <li><a class="btn-floating red"><i class="material-icons">settings_input_composite</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">perm_identity</i></a></li>
-    </ul>
-  </div>
-        
+    <!--Modals-->
     <div id="tawzermodal" class="modal"> <span id="x" class="modal-acton modal-close col">&#xd7;</span>
         <div class="modal-content">
             <h4 class="col s12">Debbie Tawzer</h4>
@@ -121,14 +125,14 @@
             <p class="flow-text col s12">Contact Info: <a class="light-blue-text text-darken-3" href="mailto:dstasiak@dcsdk12.org" target="_top">dstasiak@dcsdk12.org</a></p>
             <p class="flow-text col s12">About: <span class="flow-text light-blue-text text-darken-4">Mr.Stasiak has been teaching at Legend High School for several years as a computer science teacher allowing students to learn the skills they need to succeed in TSA. He teaches a variety of computer science courses and encourages countless students to pursue careers and compete in events related to computer science. He is also an advisor to the BEST Robotics team which took 3rd place at State in 2016.</span></p>
             <p class="flow-text col s12">College: <span class="flow-text light-blue-text text-darken-4">Moravian College</span></p>
-            <p class="flow-text col s12">Career: <span class="flow-text light-blue-text text-darken-4">Originally worked as a software engineer until went into teaching with an emphasis in computer science  because "I was looking for something more rewarding".</span></p>
+            <p class="flow-text col s12">Career: <span class="flow-text light-blue-text text-darken-4">Originally worked as a software engineer until he got fed up with it and went into teaching with an emphasis in computer science  because "I was looking for something more rewarding".</span></p>
             <p class="flow-text col s12">Major: <span class="flow-text light-blue-text text-darken-4">Graduated with a degree in computer science and with a minor in business.</span></p>
             <div class="modal-footer">
                 <a class="waves-effect waves-light btn modal-action modal-close exit-btn col s12">Close</a>
             </div>
         </div>
     </div>
-    
+
     <!--Page Start-->
     <script>
         $(document).ready(function () {
@@ -381,6 +385,31 @@
     <a href="#!" data-activates="slide-out" class="button-collapse">
         <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
     </a>
+    <script src="js/iziModal.min.js"></script>
+        <script type="text/javascript">
+       // Large content
+$(document).on('click', '.trigger-largeContent', function (event) {
+    event.preventDefault();
+    $('#modal-Large').iziModal('open', this); // Do not forget the "this"
+});	
+$("#modal-Large").iziModal({
+    title: 'What is Augmented Reality?',
+    headerColor: '#1565C0',
+    overlayColor: 'rgba(0, 0, 0, 0.4)',
+    iconColor: '',
+    iconClass: null,
+    width: 800,
+    padding: 0,
+    overlayClose: true,
+    closeOnEscape: true,
+    openFullscreen: true,
+    bodyOverflow: true,
+    zindex: 1012,
+});
+        $(document).on('opened', '#modal-Large', function (e) {
+    
+});
+    </script>
 
 </body>
 

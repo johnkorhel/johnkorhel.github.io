@@ -128,7 +128,7 @@
             loopTop: false,
             loopHorizontal: true,
             continuousVertical: false,
-            normalScrollElements: '.modal',
+            normalScrollElements: '.modal, .disableScroll',
             scrollOverflow: false,
             scrollOverflowHandler: defaultScrollHandler,
             touchSensitivity: 5,
