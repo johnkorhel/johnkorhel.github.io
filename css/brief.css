@@ -484,17 +484,6 @@ body.modal-open {
 .modal .modal-header .modal-button {
     top: 8.5px;
 }
-
-@media(max-width: 478px){
-    .modal .modal-header .modal-button{
-        top: 27px;
-    }
-}
-@media(max-width: 361px){
-    .modal .modal-header .modal-button{
-        top: 45px;
-    }
-}
 .isAttatched {
     border-radius: 0 !important;
     margin-top: 0 !important;
