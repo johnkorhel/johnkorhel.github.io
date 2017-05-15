@@ -481,7 +481,7 @@ body.modal-open {
     opacity: 1;
 }
 
-.modal .modal-header .modal-button {
+.modal {
     top: 8.5px;
 }
 .isAttatched {
@@ -530,6 +530,9 @@ content: '';
     left:0;
     top:0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 
