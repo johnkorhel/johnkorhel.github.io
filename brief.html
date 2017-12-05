@@ -16,20 +16,20 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/iziModal.css">
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['ar', 'about', 'importance', 'dangers', 'history', 'resources'],
+                anchors: ['arrow', 'about', 'safety', 'uses', 'othertech', 'benefits', 'cost', 'resources'],
                 navigation: true,
                 navigationPosition: 'right',
                 recordHistory: true,
-                navigationTooltips: ['Augmented Reality', 'What is it?', 'Importance', 'Dangers', 'History', 'Resources'],
+                navigationTooltips: ['Arrow', 'About', 'Safety', 'Uses', 'OtherTech', 'Benefits', 'Cost', 'Resources'],
                 continuousVertical: true,
                 menu: '#menu',
             });
         });
     </script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
             is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
             is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
@@ -49,7 +49,7 @@
         });
     </script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.button-collapse').sideNav({
                 closeOnClick: true
             });
@@ -59,7 +59,7 @@
         });
     </script>
     <script type="text/javascript">
-        $(document).on('click', '.trigger', function (event) {
+        $(document).on('click', '.trigger', function(event) {
             event.preventDefault();
             $('#modal-name').iziModal('open');
         });
@@ -122,12 +122,14 @@
             <li class="bold"> <a class="active collapsible-header">Brief</a>
                 <div class="collapsible-body">
                     <ul id="menu">
-                        <li data-menuanchor="ar" class="active"><a href="brief.html#ar">Augmented Reality</a></li>
-                        <li data-menuanchor="about"><a href="brief.html#about">What is AR?</a></li>
-                        <li data-menuanchor="importance"><a href="brief.html#importance">Importance of AR</a></li>
-                        <li data-menuanchor="dangers"><a href="brief.html#dangers">Dangers of AR</a></li>
-                        <li data-menuanchor="history"><a href="brief.html#history">History of AR</a></li>
-                        <li data-menuanchor="resources"><a href="resources.html">Resources/LEAP</a></li>
+                        <li><a href="brief.html#arrow">Arrow AI</a></li>
+                        <li><a href="brief.html#about">About</a></li>
+                        <li><a href="brief.html#safety">Saefty Concerns and Liabilities</a></li>
+                        <li><a href="brief.html#uses">Potential Uses</a></li>
+                        <li><a href="brief.html#othertech">Available Technologies</a></li>
+                        <li><a href="brief.html#benefits">Benefits</a></li>
+                        <li><a href="brief.html#cost">Cost Overview</a></li>
+                        <li><a href="resources.html">Resources/LEAP</a></li>
                     </ul>
                 </div>
             </li>
@@ -136,390 +138,210 @@
     <!--Modals-->
     <div class="containter">
         <div class="row">
-            <div id="armodal" class="modal"> 
+            <div id="arrowmodal" class="modal">
                 <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
-                    <h4 class="modal-header-title center-align white-text">What is Augmented Reality?</h4>
+                    <h4 class="modal-header-title center-align white-text">About Arrow AI</h4>
                     <a href="#" class="modal-button modal-button-close modal-close"></a>
                 </div>
                 <div class="wrap">
-                <div class="modal-content">
-                    <p class="flow-text col s12">Augmented Reality (AR) is a piece of technology that turns the environment around the user into a digital interface. This is achieved by placing virtual objects in the real world, in real-time. There are three main categories of AR tools.</p>
-                    <p class="flow-text col s12"><b>AR Viewers</b> - AR Viewers are simple, life-size 3D models that users can make and view wherever they please. The creation of these 3D models can range from taking a panorama with a phone to sculpting a game in Unity.</p>
-                    <p class="flow-text col s12"><b>AR Browsers</b> - AR Browsers are simple and lightweight phone and tablet applications that absolutely transform the world around the user. Have you ever wondered how large the Empire State Building is? Just snap a picture with your phone and you'll get the cost of construction, number of employees, and the exact height. </p>
-                    <p class="flow-text col s12"><b>AR Gaming</b> - The most prominent example of AR in our society is gaming. There are not too many games out as it stands, and AR is commonly mixed up with VR. The reason AR games are so hard to create is because developers need to base their design and levels around totally different environments depending on where the user is. One of the most prominent and expert uses of AR is in the popular game, Pokemon GO.</p>
-                    <p class="flow-text col s12">It is important to remember that AR and VR are two completely different things. The two both immerse the user, but AR keeps the user in touch with the real world, while VR puts the user into a completely virtual world. </p>
-                    <img class="col s10 l4 m6 offset-s1 offset-l2 responsive-img border-img" src="img/skyscraper.jpg">
-                    <img class="col s10 l4 m6 offset-s1 responsive-img border-img" src="img/2poke.jpg">
-                    <ul class="col s12 flow-text browser-default"><b>Today's Uses</b> - There are many uses for AR in today's society. The most well know are products like Google Glasses and Microsoft's Hololens. However, there are other products out there for fighter pilots, in cars and many others. All of these are equally impressive and useful.
-                        <br>
-                        <li class="col s11 flow-text" style="margin-left: 20px; margin-top: 10px;">Google Glasses are some of the most well-known, and for good reason. When they were first released, they quickly got a reputation for being lightweight and like glasses. Although Google Glasses were innovative and neat, they didn't stay in the spotlight for long, because they aren't very applicable to the normal consumer who would use their mobile device. With some more functionality, Google Glasses could definitely make a comeback.</li>
-                        <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">A newer option that has just been released is Microsoft's Hololens. The Hololens are very similar to the Google Glasses, but they have a little more functionality, and with a lot more bulk, they become more visor-like. The Hololens have a lot of potential towards advertising, game development, game playing, and just general use.</li>
-                        <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">Another well know AR use is in cars. For the past several years, cars have started to use Augmented Reality to help drivers. The most common application is found when a car operator backs up their car, and has the ability to utilize a rear facing camera with augmented lanes built in. However, there has been recent news of Toyota patenting an Augmented Reality Windshield in 2016, which would allow for a whole new avenue of technology to be produced and would allow the driver to see speed, lane drifting, blind spots, and anything else they could think of.</li>
-                    </ul>
-                    <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div></div>
+                    <div class="modal-content">
+                        <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+
+                        <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
+                </div>
             </div>
-            <div id="importancemodal" class="modal">
+            <div id="safetymodal" class="modal">
                 <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
-                    <h4 class="modal-header-title center-align white-text">Importance of Augmented Reality</h4>
+                    <h4 class="modal-header-title center-align white-text">Safety Concerns and Liabilities</h4>
                     <a href="#" class="modal-button modal-button-close modal-close special"></a>
                 </div>
                 <div class="wrap">
-                <div class="modal-content">
-                    <p class="flow-text col s12">There are many reasons to use AR in everyday life beyond the current trending tech. </p>
-                    <p class="col s12 flow-text"><b>Mobility</b> - Any job that is on the move can really benefit from a piece of AR tech. They can have a mobile dashboard in front of their face almost anywhere they go, while also being able to perform their job to the fullest of their ability. </p>
-                    <p class="col s12 flow-text"><b>Hands Free</b> - If the user is using something like Google Glasses, then AR is essentially hands free. They are able to perform all the necessary functions in their everyday life more efficiently. The user can do most anything while retaining full situational awareness.</p>
-                    <p class="col s12 flow-text"><b>Visual Alerts and Reminders</b> - Alerts to take your medicine or get to the meeting on time can save your life both literally and figuratively - however, with phones and even smart watches we sometimes don’t notice when they go off. With improving Augmented Reality devices like Google Glasses or Microsoft's Hololens, you can’t miss the alerts. If you were to wear these devices, the alert would pop up on the side of the screen allowing for you to automatically notice it, rather than have the chance of it being missed or forgotten. </p>
-                    <p class="col s12 flow-text"><b>Calls</b> - The world went wild when the bluetooth headset was made available to the consumers, because people could now talk to someone on the phone without having to hold the phone, which can help in a variety of situations where you need to be hands free. With improving wearable devices for Augmented Reality you can call someone just by talking to your device and then have a small speaker near your ear to communicate with them completely hands free, revolutionizing calling in cramped or undesirable locations.</p>
-                    <p class="col s12 flow-text"><b>Game Design</b> - Up until now, game design has been a completely inside the computer kind of job. Now using 3-D game development programs like Unity or Unreal Engine, you could wear an Augmented Reality Headset and go into your game’s world. From there, you can craft the environment in a completely new way - from the inside, while still maintaining visual awareness of what's around you. </p>
-                    <p class="col s12 flow-text"><b>Advertising</b> - Almost no one likes ads that pop up on apps or billboards or on your computer, but for advertising companies, Augmented Reality is a gold mine. If enough people could wear an augmented reality headset in the real world, companies could have special ads on billboards, trucks, windows… that when you look at them could come to life. These new advertisements could be interactive and interesting, drawing in the consumer. For the advertising companies, at least, it could be a very useful way to raise awareness and hype for their products. </p>
-                    <p class="col s12 flow-text"><b>Education</b> - Each day millions of students throughout the world are bored in their classroom with unconvential and dull learning methods. With AR, the classroom can be revolutionized with apps like Aurasma Studio, Anatomy 4D, Elements 4D, and many others. These apps allow you to point your smartphone at objects (like a textbook, packet, or anatomy doll) and then it superimposes information over it. Imagine in history class you point your smartphone at the textbook and George Washington comes to life to tell you about the American Revolution, or in anatomy when you point your phone at a skeletal prop and multiple muscles, tendons, and bone names are superimposed allowing for interactive learning experiences. AR Promises to revolutionize classrooms everywhere by adding new, interactive, and engaging learning experiences. </p>
-                    <p class="col s12 flow-text"><b>The Future</b> - What does the future hold for Augmented Reality? Many shows, like Star Trek, imply you can create an advanced video game that you can overlay on your surroundings (holodeck), or others, like Continuum, believe that we’ll be able to get contacts with a neural link that can show you anything from the heartbeat of a person next to you, to replaying video just by thinking about it. Suffice to say, any of these projects are far from reality, but are getting closer with each passing day, showing the potential for AR is exponential and can change the world as we know it. </p>
-                    <img class="col s10 l4 m6 offset-s1 offset-l2 responsive-img border-img" src="img/dash.jpg">
-                    <img class="col s10 l4 m6 offset-s1 responsive-img border-img" src="img/education.jpg">
-                    <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a>
-                </div>
+                    <div class="modal-content">
+                        <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+                        <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a>
+                    </div>
                 </div>
             </div>
-            <div id="dangermodal" class="modal"> 
+            <div id="dangermodal" class="modal">
                 <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
-                    <h4 class="modal-header-title center-align white-text">Dangers of Augmented Reality</h4>
+                    <h4 class="modal-header-title center-align white-text">Potential Uses and Applications</h4>
                     <a href="#" class="modal-button modal-button-close modal-close"></a>
                 </div>
                 <div class="wrap">
-                <div class="modal-content">
-                    <p class="flow-text col s12"><b>Distractions</b> - In the world of technology, there is always new and innovative tech that is coming out all the time. Along with these new technologies come new dangers that can affect every person that uses the tech. With AR barely on the market, there are still many studies that need to be done with it; however, the information currently available shows that Augmented Reality can cause heavy distractions. Just like texting on your phone, you're paying more attention to the device and what it shows you rather than the world around you. Augmented Reality can cause you to become distracted with the text on the screen or the images that pop up, making you pay less attention to your surroundings, potentially putting you in danger. Imagine a scenario where you’re walking down the street and you get a funny meme from your friend; you open up the image and it fills the screen (Google Glasses). As you’re reading the text on the picture, you accidentally walk into the street where a car is coming. That scenario would most likely end in disaster because of the AR distraction.</p>
-                    <p class="flow-text col s12">Distractions are a real problem even for trained professionals. Fighter pilots have minimal displays with just the information they need to know and no images that could distract them. Pilots also go through extensive training to be able to understand this information quickly and pay attention to their surroundings. On in informal study by IEEE Spectrum, several hundred people used Google Glasses to see how their attention and sight was impaired. It was discovered that 5 to 10 percent of people struggle while using glasses to focus on objects for 20 seconds before giving up. However, 25 percent of people in the study had difficulty focusing at first, but were eventually able to adjust to the Google Glasses. This data shows that, at least initially, Google Glasses impair your ability to focus on your surroundings. Focus is not the only problem – with all the images and text that pops up the screen, your vision is obscured, so that you might not notice as much in your surroundings, like a car. This can happen when a notification pops up on the side of the screen. You might ignore it as you cross the street, but the danger is still present, because you are consciously aware of the notification and are probably thinking about it - this can cause you to be distracted and potentially cause an accident.</p>
-                    <img class="col s10 l4 m6 offset-s1 offset-l2 responsive-img border-img" src="img/pilotar.jpg">
-                    <img class="col s10 l4 m6 offset-s1 responsive-img border-img" src="img/hololens2.jpg">
-                    <p class="flow-text col s12"><b>Vision</b> - There are several things that you have to consider when using products like Google Glasses, such as peripheral vision, central vision, and your focus. Peripheral vision is much more essential than you might think towards your ability to recognize what's happening around you. Peripheral vision gives you sensory information, like rough estimates of how far objects are from you and an estimate of movement around you. Interfering with peripheral vision can cause you to misjudge the distance of objects or the relative motion they have, causing you to bump into objects or stumble. Central vision is key to knowing what's happening around you, but peripheral vision is essential to knowing what is coming up.</p>
-                    <p class="flow-text col s12"><b>Concerns</b> - Along with distractions to your person there are some milder concerns that can come with Augmented Reality. Along with almost every device there is a long held concern about bluelight causing sleeplessness and that can be caused by AR Devices as well. More concerns about AR is more about how people will react to it and that they may start to focus more on the AR world instead of the real world and lose focus on enjoying the world in its natural state.</p>
-                    <div class="flow-text col s12" style="margin-top: 20px;"></div> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div></div>
+                    <div class="modal-content">
+                        <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+                    </div> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
             </div>
-            <div id="historymodal" class="modal"> 
-                <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
-                    <h4 class="modal-header-title center-align white-text">History of Augmented Reality</h4>
-                    <a href="#" class="modal-button modal-button-close modal-close"></a>
-                </div>
-                <div class="modal-content">
-                    <div class="container">
-                        <div class="timeline">
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/sutherland.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1968<i class="material-icons right">more_vert</i></span>
-                                        <p>Ivan Sutherland creates a wireframe</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1968<i class="material-icons right">close</i></span>
-                                        <p>Ivan Sutherland developed the first head mounted display system, which started using computer generated graphics that showed the users a wire frame of drawings.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge blue white-text"><i class="material-icons">language</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/videoplace.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1974<i class="material-icons right">more_vert</i></span>
-                                        <p>Myron Kruegar creates the Videoplace</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1974<i class="material-icons right">close</i></span>
-                                        <p>Myron Krueger built an ‘artificial reality’ laboratory called the Videoplace. This laboratory used state of the art projectors with video cameras that displayed onscreen silhouettes, which surrounded the users, allowing them to interact with the environment. </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge red white-text"><i class="material-icons">picture_in_picture</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/caudell.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1990<i class="material-icons right">more_vert</i></span>
-                                        <p>Tom Caudwell names "Augmented Reality"</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1990<i class="material-icons right">close</i></span>
-                                        <p>Tom Caudell, working at Boeing, creates the term “Augmented Reality”.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge green white-text"><i class="material-icons">polymer</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/julie.JPG"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1994<i class="material-icons right">more_vert</i></span>
-                                        <p>Julie Martin creates "Dancing in Cyberspace"</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1994<i class="material-icons right">close</i></span>
-                                        <p>Julie Martin creates the first augmented reality production in theaters called “Dancing in Cyberspace”. The show featured acrobats who danced within virtual objects on stage.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge yellow white-text"><i class="material-icons">swap_calls</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/NFL1998.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1998<i class="material-icons right">more_vert</i></span>
-                                        <p>NFL draws the yellow line</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1998<i class="material-icons right">close</i></span>
-                                        <p>The first yellow line marker is drawn during a live NFL game using Sportvision.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge orange white-text"><i class="material-icons">av_timer</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/navy.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1999<i class="material-icons right">more_vert</i></span>
-                                        <p>Navy creates BARS</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1999<i class="material-icons right">close</i></span>
-                                        <p>Naval researchers begin exploring the uses of a Battlefield Augmented Reality System (BARS). The original model was robust and wearable for soldiers. </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge grey white-text"><i class="material-icons">visibility</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/x-38.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">1999<i class="material-icons right">more_vert</i></span>
-                                        <p>NASA uses AR in test flights</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">1999<i class="material-icons right">close</i></span>
-                                        <p>During the flight of the NASA X-38, the spacecraft is flowing with a Hybrid Synthetic Vision system that augmented reality by overlaying a map with data to provide visual navigation information during flight tests.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge indigo darken-4 white-text"><i class="material-icons">track_changes</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/artoolkit.jpeg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2000<i class="material-icons right">more_vert</i></span>
-                                        <p>HiroKazu Kato creates ARToolKit</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2000<i class="material-icons right">close</i></span>
-                                        <p>HiroKazu Kato created the ARToolKit. The ARToolKit was revolutionary because it was an open-sourced software library that used video tracking, which overlaid with computer graphics onto a video camera. The ARToolKit is still used today to compliment many augmented reality softwares and experiences.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge pink accent-4 white-text"><i class="material-icons">video_library</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/skycam.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2003<i class="material-icons right">more_vert</i></span>
-                                        <p>NFL use AR in their Aerial Skycam</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2003<i class="material-icons right">close</i></span>
-                                        <p> In the 2003 NFL season, Sportsvision is used with a computer graphics system capable of inserting lines from the Skycam, the NFL’s mobile camera that can show an aerial view of the field.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge brown white-text"><i class="material-icons">flight</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/arweb.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2009<i class="material-icons right">more_vert</i></span>
-                                        <p>Augmented Reality is brought to the web and media</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2009<i class="material-icons right">close</i></span>
-                                        <p> ARToolKit is used to bring augmented reality to the web.</p>
-                                        <br>
-                                        <p> Print media uses AR for the first time. On the cover of the Esquire Magazine, readers were prompted to scan it to see Robert Downy Jr. come alive on the page.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge green white-text"><i class="material-icons">wifi</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/car.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2013<i class="material-icons right">more_vert</i></span>
-                                        <p>Cars now have AR</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2013<i class="material-icons right">close</i></span>
-                                        <p> Car manufacturers begin to implement augmented reality into their vehicles.</p>
-                                        <br>
-                                        <p>The Volkswagen MARTA app is used to provide step by step repair solutions. This app is especially useful for technicians when figuring out how to repair the car.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge red accent-4 white-text"><i class="material-icons">time_to_leave</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/gg.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2014<i class="material-icons right">more_vert</i></span>
-                                        <p>Google Glasses Appear</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2014<i class="material-icons right">close</i></span>
-                                        <p> Google announces Google Glasses, starting the trend of wearable AR for consumers.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge deep-purple white-text"><i class="material-icons">mood</i></div>
-                            </div>
-                            <div class="timeline-event">
-                                <div class="card timeline-content">
-                                    <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="img/timeline/hololens.jpg"> </div>
-                                    <div class="card-content"> <span class="card-title activator grey-text text-darken-4">2016<i class="material-icons right">more_vert</i></span>
-                                        <p>Microsoft goes for AR</p>
-                                    </div>
-                                    <div class="card-reveal"> <span class="card-title grey-text text-darken-4">2016<i class="material-icons right">close</i></span>
-                                        <p>The HoloLens Developer Kit and Meta 2 Developer Kit by Microsoft is set to ship in 2016.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-badge cyan white-text"><i class="material-icons">whatshot</i></div>
-                            </div>
-                        </div> <a class="waves-effect waves-light btn modal-action modal-close col s12 m2 offset-m5 exit-btn">Close</a> </div>
-                </div>
+        </div>
+        <div id="othertechmodal" class="modal">
+            <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
+                <h4 class="modal-header-title center-align white-text">Other AI Technologies</h4>
+                <a href="#" class="modal-button modal-button-close modal-close"></a>
             </div>
-            <div class="disableScroll" style="z-index: 1012 ">
-            <div id="modal-ARModal">
-                
-                    <div class="iziModal-content">
-                    <p class="flow-text col s12">Augmented Reality (AR) is a piece of technology that turns the environment around the user into a digital interface. This is achieved by placing virtual objects in the real world, in real-time. There are three main categories of AR tools.</p>
-                    <p class="flow-text col s12"><b>AR Viewers</b> - AR Viewers are simple, life-size 3D models that users can make and view wherever they please. The creation of these 3D models can range from taking a panorama with a phone to sculpting a game in Unity.</p>
-                    <p class="flow-text col s12"><b>AR Browsers</b> - AR Browsers are simple and lightweight phone and tablet applications that absolutely transform the world around the user. Have you ever wondered how large the Empire State Building is? Just snap a picture with your phone and you’ll get the cost of construction, number of employees, and the exact height. </p>
-                    <p class="flow-text col s12"><b>AR Gaming</b> - The most prominent example of AR in our society is gaming. There are not too many games out as it stands, and AR is commonly mixed up with VR. The reason AR games are so hard to create is because developers need to base their design and levels around totally different environments depending on where the user is. One of the most prominent and expert uses of AR is in the popular game, Pokemon GO.</p>
-                    <p class="flow-text col s12">It is important to remember that AR and VR are two completely different things. The two both immerse the user, but AR keeps the user in touch with the real world, while VR puts the user into a completely virtual world. </p>
-                    <img class="col s10 l4 m6 offset-s1 offset-l2 responsive-img border-img" src="img/skyscraper.jpg">
-                    <img class="col s10 l4 m6 offset-s1 responsive-img border-img" src="img/2poke.jpg">
-                    <ul class="col s12 flow-text browser-default"><b>Today's Uses</b> - There are many uses for AR in today's society. The most well know are products like Google Glasses and Microsoft's Hololens. However, there are other products out there for fighter pilots, in cars and many others. All of these are equally impressive and useful.
-                        <br>
-                        <li class="col s11 flow-text" style="margin-left: 20px; margin-top: 10px;">Google Glasses are some of the most well-known, and for good reason. When they were first released, they quickly got a reputation for being lightweight and like glasses. Although Google Glasses were innovative and neat, they didn't stay in the spotlight for long, because they aren't very applicable to the normal consumer who would use their mobile device. With some more functionality, Google Glasses could definitely make a comeback.</li>
-                        <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">A newer option that has just been released is Microsoft's Hololens. The Hololens are very similar to the Google Glasses, but they have a little more functionality, and with a lot more bulk, they become more visor-like. The Hololens have a lot of potential towards advertising, game development, game playing, and just general use.</li>
-                        <li class="col s12 flow-text" style="margin-left: 20px; margin-top: 10px;">Another well know AR use is in cars. For the past several years, cars have started to use Augmented Reality to help drivers. The most common application is found when a car operator backs up their car, and has the ability to utilize a rear facing camera with augmented lanes built in. However, there has been recent news of Toyota patenting an Augmented Reality Windshield in 2016, which would allow for a whole new avenue of technology to be produced and would allow the driver to see speed, lane drifting, blind spots, and anything else they could think of.</li>
-                    </ul> 
+            <div class="modal-content">
+                <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+            </div>
+        </div>
+        <div id="benefitsmodal" class="modal">
+            <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
+                <h4 class="modal-header-title center-align white-text">Benefits of Arrow AI</h4>
+                <a href="#" class="modal-button modal-button-close modal-close"></a>
+            </div>
+            <div class="modal-content">
+                <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+            </div>
+        </div>
+        <div id="costmodal" class="modal">
+            <div id="modalHeader" class="modal-header container-fluid blue darken-3 title-bar z-depth-1">
+                <h4 class="modal-header-title center-align white-text">Cost of Arrow AI</h4>
+                <a href="#" class="modal-button modal-button-close modal-close"></a>
+            </div>
+            <div class="modal-content">
+                <p class="flow-text col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt massa purus, ut feugiat orci dapibus ut. Fusce ut ornare dui, at volutpat nunc. Etiam ullamcorper tellus orci, posuere aliquam sapien tempus non. Praesent sodales nisl non ullamcorper aliquam. Quisque suscipit metus in metus scelerisque, vel tempor dui blandit. Ut porttitor lacus vel eros lacinia finibus. Suspendisse quis purus malesuada, bibendum felis eu, blandit felis. Vestibulum posuere justo sapien. Sed id bibendum massa. Ut a nunc nec nisl accumsan scelerisque quis a ex. Vestibulum eu lorem condimentum leo consectetur cursus. Maecenas eleifend augue nec nunc rhoncus, ut pharetra nisi sodales. In accumsan egestas nisi in maximus. Maecenas cursus eros a arcu congue, ut iaculis purus rhoncus. Suspendisse pellentesque aliquam ipsum, non feugiat mi vehicula vel. Curabitur quis purus egestas, lobortis lacus in, porta nisl. Nulla quis odio vitae orci vehicula gravida. Suspendisse iaculis sagittis lacus, et dignissim mi consectetur ac. Etiam ac pretium sem.</p>
+            </div>
+        </div>
+        <!--Start of the Page-->
+        <div id="particles-js"></div>
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="header-sec text-center">
+                                <div class="header-text"> <span class="first">Hi, I'm Arrow.</span> </div>
+                            </div>
+                        </div>
                     </div>
-       
+                </div>
+                <div data-menuanchor="about" class="glypharrow"> <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a> </div>
             </div>
-        </div>
-        </div>
-    </div>
-    <!--Start of the Page-->
-    <div id="particles-js"></div>
-    <div id="fullpage">
-        <div class="section" id="section0">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="header-sec text-center">
-                            <div class="header-text"> <span class="first">Augmented Reality</span> </div>
+            <div class="section" id="section1" data-anchor="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#arrowmodal">
+                                <!--<a class="trigger-largeContent" href="#">-->
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Learn more about Arrow AI.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#arrowmodal">Click Here</a> </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div data-menuanchor="about" class="glypharrow"> <a style="color: white;" href="#about" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a> </div>
-        </div>
-        <div class="section" id="section1" data-anchor="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m3">
-                        <a class="modal-trigger" href="#armodal"> <!--<a class="trigger-largeContent" href="#">-->
-                            <div class="card hoverable">
-                                <div class="card-image"> <img src="img/Pokemon.jpg"> </div>
-                                <div class="card-content">
-                                    <p style="color: black;">Learn more about what augmented reality is and current technologies that are being utilized.</p>
+            <div class="section" id="section2" data-anchor="safety">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#safetymodal">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Safety concerns and liabilities surrounding Arrow AI and AI in general.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#safetymodal">Click Here</a> </div>
                                 </div>
-                                <div class="card-action"> <a class="modal-trigger" href="#armodal">Click Here</a> </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section3" data-anchor="uses">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#dangermodal">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Learn about Arrow AI's potential uses and applications.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#dangermodal">Click Here</a> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4" data-anchor="othertech">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#othertechmodal">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Other AI technologies, and how Arrow leaves them in the dust.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#othertechmodal">Click Here</a> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section5" data-anchor="benefits">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#benefitsmodal">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Benefits of Arrow AI.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#benefitsmodal">Click Here</a> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section6" data-anchor="cost">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a class="modal-trigger" href="#costmodal">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">Cost Overview.</p>
+                                    </div>
+                                    <div class="card-action"> <a class="modal-trigger" href="#costmodal">Click Here</a> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section7" data-anchor="resources">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 offset-m3">
+                            <a href="resources.html">
+                                <div class="card hoverable">
+                                    <div class="card-image"> <img src="#"> </div>
+                                    <div class="card-content">
+                                        <p style="color: black;">The resources that went into developing this website.</p>
+                                    </div>
+                                    <div class="card-action"> <a href="resources.html">Click Here</a> </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="section2" data-anchor="creation">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m3">
-                        <a class="modal-trigger" href="#importancemodal">
-                            <div class="card hoverable">
-                                <div class="card-image"> <img src="img/jet.jpg"> </div>
-                                <div class="card-content">
-                                    <p style="color: black;">Learn about the importance of augmented reality and how it affects your everyday life.</p>
-                                </div>
-                                <div class="card-action"> <a class="modal-trigger" href="#importancemodal">Click Here</a> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section3" data-anchor="brief">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m3">
-                        <a class="modal-trigger" href="#dangermodal">
-                            <div class="card hoverable">
-                                <div class="card-image"> <img src="img/Firefighters.jpg"> </div>
-                                <div class="card-content">
-                                    <p style="color: black;">What are the possible dangers associated with augmented reality and it's rapid implementation?</p>
-                                </div>
-                                <div class="card-action"> <a class="modal-trigger" href="#dangermodal">Click Here</a> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section4" data-anchor="history">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m3">
-                        <a class="modal-trigger" href="#historymodal">
-                            <div class="card hoverable">
-                                <div class="card-image"> <img src="img/timeline/sutherland.jpg"> </div>
-                                <div class="card-content">
-                                    <p style="color: black;">What is the history behind the groundbreaking technology of Augmented Reality?</p>
-                                </div>
-                                <div class="card-action"> <a class="modal-trigger" href="#historymodal">Click Here</a> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section5" data-anchor="resources">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 offset-m3">
-                        <a href="resources.html">
-                            <div class="card hoverable">
-                                <div class="card-image"> <img src="img/resources.jpg"> </div>
-                                <div class="card-content">
-                                    <p style="color: black;">The resources that went into developing this website.</p>
-                                </div>
-                                <div class="card-action"> <a href="resources.html">Click Here</a> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#!" data-activates="slide-out" class="button-collapse">
-        <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
-    </a>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/iziModal.js"></script>
-    <script type="text/javascript">
-       // Large content
-$(document).on('click', '.trigger-largeContent', function (event) {
-    event.preventDefault();
-    $('#modal-ARModal').iziModal('open', this); // Do not forget the "this"
-});	
-$("#modal-ARModal").iziModal({
-    title: 'What is Augmented Reality?',
-    headerColor: '#1565C0',
-    overlayColor: 'rgba(0, 0, 0, 0.4)',
-    padding: 15,
-    overlayClose: true,
-    closeOnEscape: true,
-    openFullscreen: true,
-    bodyOverflow: true,
-    zindex: 1012,
-    onResize: function(event) {
-        
-    }
-});
-        $(document).on('opened', '#modal-ARModal', function (e) {
-    
-});
-    </script>
+        <a href="#!" data-activates="slide-out" class="button-collapse">
+            <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
+        </a>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/iziModal.js"></script>
 </body>
 
 </html>
