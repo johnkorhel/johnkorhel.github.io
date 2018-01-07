@@ -1,0 +1,84 @@
+@arrow-blue: #00B0FF;
+@grey-900: #212121;
+@grey-50: #ECEFF1;
+
+h1 {
+   font-size: 64px;
+   display: table;
+   color: @arrow-blue;
+}
+
+.text-box {
+    display: table;
+    margin: 0 auto;
+}
+
+#typed-1 {
+    color: white;
+    font-size: 20px;
+    strong {
+        color: @arrow-blue;
+    }
+}
+
+.typed-cursor {
+    color: @arrow-blue;
+    font-size: 20px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#particles-js {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: -1;
+    background-color: @grey-900;
+}
+
+.nav-circle-button {
+    width: 70px;
+    height: 70px;
+    line-height: 55px;
+    border-radius: 50%;
+    color: white;
+    border-color: white;
+}
+
+.nav-button-container {
+    width: 300px;
+}
+
+.nav-button {
+    background-color: @grey-50;
+}
+
+.front-page-text-box {
+    width: 300px;
+}
+
+.next-page-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    a {
+        color: @grey-50;
+        font-size: 35px;
+    }
+}
