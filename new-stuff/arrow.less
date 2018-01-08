@@ -1,9 +1,24 @@
 @arrow-blue: #00B0FF;
-@grey-900: #212121;
+@dark-blue: #005780 ;
+@dark-gray: #111111;
 @grey-50: #ECEFF1;
 
+@font-face {
+    font-family: open-sans;
+    src: url(fonts/open-sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url(fonts/Rajdhani/Rajdhani-Regular.ttf)
+}
+
+body {
+    font-family: Rajdhani;
+}
+
 h1 {
-   font-size: 64px;
+   font-size: 70px;
    display: table;
    color: @arrow-blue;
 }
@@ -15,7 +30,7 @@ h1 {
 
 #typed-1 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     strong {
         color: @arrow-blue;
     }
@@ -23,7 +38,7 @@ h1 {
 
 .typed-cursor {
     color: @arrow-blue;
-    font-size: 20px;
+    font-size: 24px;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -49,7 +64,7 @@ h1 {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     z-index: -1;
-    background-color: @grey-900;
+    background-color: @dark-gray;
 }
 
 .nav-circle-button {
@@ -62,11 +77,31 @@ h1 {
 }
 
 .nav-button-container {
-    width: 300px;
+    width: 360px;
 }
 
 .nav-button {
-    background-color: @grey-50;
+    // background-color: @grey-50;
+    width: 110px;
+}
+
+#nb1 {
+    background-color: @dark-blue;
+}
+#nb2 {
+    background-color: @dark-blue + #080808;
+}
+#nb3 {
+    background-color: @dark-blue + #111111;
+}
+#nb4 {
+    background-color: @dark-blue + #181818;
+}
+#nb5 {
+    background-color: @dark-blue + #222222;
+}
+#nb6 {
+    background-color: @dark-blue + #282828;
 }
 
 .front-page-text-box {
@@ -75,10 +110,11 @@ h1 {
 
 .next-page-arrow {
     position: absolute;
-    left: 50%;
+    left: 50%;    
     bottom: 10px;
     a {
-        color: @grey-50;
-        font-size: 35px;
+        color: @arrow-blue;
+        font-size: 36px;
     }
+    margin-left: -18px
 }
