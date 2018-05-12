@@ -204,7 +204,51 @@ body.modal-open {
     position: fixed;
 }
 
-.link-anchor{
+/*.link-anchor{
     padding-top: 65px;
     margin-top: -65px;
+}*/
+
+.content {
+    position:absolute;
+    top: 77.77px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;        
+}
+
+.title-bar {
+    height: 77.77px !important;
+}
+
+.content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.content::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+}
+
+/* Track */
+.content::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 2px;
+}
+
+/* Handle */
+.content::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0px;
+    min-height: 28px;
+    padding: 100px;
+}
+
+/* Handle on hover */
+.content::-webkit-scrollbar-thumb:click {
+    background: #555; 
 }

@@ -3431,10 +3431,10 @@ input[type=range] + .thumb {
   margin-right: -0.75rem;
 }
 
-.section {
+/*.section {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
+} made the top of the website wierd and not functional*/ 
 
 .section.no-pad {
   padding: 0;
@@ -3451,7 +3451,7 @@ input[type=range] + .thumb {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px; messes up the fullpage.js */
 }
 
 .row:after {
@@ -4069,7 +4069,7 @@ nav {
   color: #fff;
   background-color: #ee6e73;
   width: 100%;
-  height: 56px;
+  /*height: 56px; Causes a bar on the tabs*/
   line-height: 56px;
 }
 
@@ -4246,7 +4246,7 @@ nav .input-field label.active {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
+    /*height: 64px; Causes a bar on tabs*/
     line-height: 64px;
   }
   .navbar-fixed {
@@ -4826,7 +4826,7 @@ small {
 }
 
 .tabs .tab a {
-  color: #ee6e73;
+  color: #1565C0;
   display: block;
   width: 100%;
   height: 100%;
@@ -4836,11 +4836,11 @@ small {
 }
 
 .tabs .tab a:hover {
-  color: #f9c9cb;
+  color: #6a92c0;
 }
 
 .tabs .tab.disabled a {
-  color: #f9c9cb;
+  color: #6a92c0;
   cursor: default;
 }
 
@@ -4848,7 +4848,15 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: #6a92c0;
+  will-change: left, right;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #6a92c0;
   will-change: left, right;
 }
 

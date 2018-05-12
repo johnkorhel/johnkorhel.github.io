@@ -117,7 +117,25 @@
             hybrid: false,
 
             //scrolling
-            css3: true,
+            css3: false, /*When this is enabled, the z-index is disabled
+            IMPORTANT
+            IMPORTANT
+            IMPORTANT
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            */
             scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,

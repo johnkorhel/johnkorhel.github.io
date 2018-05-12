@@ -20,6 +20,11 @@ canvas {
     top: 0;
 }
 
+.front {
+    z-index: 1;
+    position: relative;
+}
+
 canvas {
     display: block;
     vertical-align: bottom;
@@ -135,6 +140,16 @@ canvas {
     transition: .7s ease-in-out;
 }
 
+.header-text-g {
+    font: 100 7em Lato;
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    background-size: cover;
+    text-transform: uppercase;
+    transition: .7s ease-in-out;
+}
+
 .subheader-text {
     font: 100 6em Lato;
     color: #FFF;
@@ -170,6 +185,9 @@ canvas {
     .header-text {
         font-size: 5em;
     }
+    .header-text-g {
+        font-size: 4.5em;
+    }
 }
 
 @media(max-width: 1350px) {
@@ -181,6 +199,9 @@ canvas {
 @media(max-width: 550px) {
     .header-text {
         font-size: 3em;
+    }
+    .header-text-g {
+        font-size: 2.1em;
     }
 }
 
@@ -231,7 +252,7 @@ body.modal-open {
     position: fixed;
 }
 .exit-btn {
-    margin-bottom: 50px;
+    margin-bottom: 22px; /*used to be 50 until changing the fixed header*/
     margin-top: 20px;
     background-color: indianred;
 }
@@ -240,126 +261,6 @@ body.modal-open {
     background-color: #cc0000;
 }
 
-/*Timeline*/
-
-.timeline {
-  position: relative;
-    padding-top: 150px;
-}
-
-.timeline .timeline-event {
-  position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.timeline .timeline-event .timeline-content {
-  position: relative;
-  width: calc(50% - 50px);
-}
-
-.timeline .timeline-event::before {
-  display: block;
-  content: "";
-  width: 2px;
-  height: calc(50% - 30px);
-  position: absolute;
-  background: #d2d2d2;
-  left: calc(50% - 1px);
-  top: 0;
-}
-
-.timeline .timeline-event::after {
-  display: block;
-  content: "";
-  width: 2px;
-  height: calc(50% - 30px);
-  position: absolute;
-  background: #d2d2d2;
-  left: calc(50% - 1px);
-  top: calc(50% + 30px);
-}
-
-.timeline .timeline-event:first-child::before {
-  display: none;
-}
-
-.timeline .timeline-event:last-child::after {
-  display: none;
-}
-
-.timeline .timeline-event:nth-child(even) .timeline-content {
-  margin-left: calc(50% + 50px);
-}
-
-.timeline .timeline-event:nth-child(odd) .timeline-content {
-  margin-left: 0;
-}
-
-.timeline .timeline-badge {
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: #d2d2d2;
-  top: calc(50% - 20px);
-  right: calc(50% - 20px);
-  border-radius: 50%;
-  text-align: center;
-  cursor: default;
-}
-
-.timeline .timeline-badge i {
-  font-size: 25px;
-  line-height: 40px;
-}
-
-@media (max-width: 600px) {
-  .timeline .timeline-event .timeline-content {
-    width: calc(100% - 70px);
-  }
-  .timeline .timeline-event::before {
-    left: 19px;
-  }
-  .timeline .timeline-event::after {
-    left: 19px;
-  }
-  .timeline .timeline-event:nth-child(even) .timeline-content {
-    margin-left: 70px;
-  }
-  .timeline .timeline-event:nth-child(odd) .timeline-content {
-    margin-left: 70px;
-  }
-  .timeline .timeline-badge {
-    left: 0;
-  }
-}
-
-@media only screen and (max-width: 414px), screen and (max-height: 414px) {
-  #fp-nav {
-    display: none !important;
-  }
-}
-
-.border-img {
-    margin-top: 15px;
-    margin-bottom: 15px; 
-}
-
-.flow-text {
-    font-size: 20px;
-}
-
-.video {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-@media only screen and (max-height: 400px) {
-    .card-image {
-        display: none;
-    }
-}
 
 /* My Modal */
 
@@ -527,6 +428,7 @@ content: '';
 
 #modalHeader {
     height: 10%;
+    max-height: 10%;
     left:0;
     top:0;
     width: 100%;
@@ -560,4 +462,120 @@ content: '';
 
 .mhead {
     padding-top: 15px;
+}
+
+.curve {
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+.g-btn {
+    border: 1px solid #FFF; 
+    background-color: transparent; 
+    color: #FFF;
+}
+
+.g-btn:hover {
+    background: #FFF;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+.color-1:hover {
+    color: #7f0d0a;
+}
+
+.color-2:hover {
+    color: #710f0c;
+}
+
+.color-3:hover {
+    color: #63110e;
+}
+
+.color-4:hover {
+    color: #561411;
+}
+
+.color-5:hover {
+    color: #481512;
+}
+
+.color-6:hover {
+    color: #3b0a0a;
+}
+
+.color-7:hover {
+    color: #3b0000;
+}
+
+/*Section Backgrounds*/
+
+@media(max-width: 650px) {
+    #section1 {
+        background-image: url("") !important;
+    }
+}
+
+/*Fixed Header on the Modal*/
+.scrolling {
+    height: 100%;
+    max-height: calc(100vh - 72px) !important;/*72px*/
+}
+
+.scrolling-2 {
+    height: 100%;
+    max-height: calc(100vh - 120px) !important;/*72px*/
+}
+
+@media(max-width: 364px) {
+    .benefits {
+        max-height: calc(100vh - 111px) !important;/*72px*/
+    }
+}
+
+@media(max-width: 301px) {
+    .arrow {
+        max-height: calc(100vh - 111px) !important;
+    }
+}
+
+@media(max-width: 511px) {
+    .safety {
+        max-height: calc(100vh - 111px) !important;
+    }
+}
+
+@media(max-width: 321px) {
+    .safety {
+        max-height: calc(100vh - 141px) !important;
+    }
+}
+
+@media(max-width: 395px) {
+    .other {
+        max-height: calc(100vh - 111px) !important;
+    }
+}
+
+@media(max-width: 319px) {
+    .cost {
+        max-height: calc(100vh - 111px) !important;
+    }
+}
+
+@media(max-width: 425px) {
+    .uses {
+        max-height: calc(100vh - 111px) !important;
+    }
+}
+
+@media(max-width: 320px) {
+    .uses {
+        max-height: calc(100vh - 150px) !important;
+    }
+}
+
+.modal.modal-fixed-header .modal-content {
+  overflow-y: auto;
 }
