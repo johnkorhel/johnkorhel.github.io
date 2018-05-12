@@ -140,6 +140,11 @@ canvas {
     transition: .7s ease-in-out;
 }
 
+.border-img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 .header-text-g {
     font: 100 7em Lato;
     color: #FFF;
