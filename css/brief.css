@@ -588,5 +588,5 @@ content: '';
 }
 
 .modal.modal-fixed-header .modal-content {
-  overflow-y: auto;
+  overflow-y: scroll;
 }
