@@ -569,6 +569,12 @@ content: '';
     }
 }
 
+@media(max-width: 600px) {
+    .uses {
+        max-height: calc(100vh - 71px) !important;
+    }
+}
+
 @media(max-width: 425px) {
     .uses {
         max-height: calc(100vh - 111px) !important;
