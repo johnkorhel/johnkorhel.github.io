@@ -273,7 +273,7 @@ body.modal-open {
 }
 
 @-moz-document url-prefix() {
-    .exit-btn {
+    .modal-button {
         margin-top: -25px !important;
     }
 }
