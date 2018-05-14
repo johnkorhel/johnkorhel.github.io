@@ -389,6 +389,12 @@ body.modal-open {
     opacity: .75; /*initial opacity of close button*/
 }
 
+@-moz-document url-prefix() {
+    .modal-button-close {
+        background: url('../img/clear.svg') no-repeat 50% 50%;
+    }
+}
+
 .modal-button:hover {
     opacity: 1;
 }
