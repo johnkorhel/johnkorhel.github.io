@@ -272,6 +272,12 @@ body.modal-open {
     background-color: #cc0000;
 }
 
+@supports (-ms-accelerator:true) {
+    .exit-btn {
+        margin-top: -25px;
+    }
+}
+
 
 /* My Modal */
 
