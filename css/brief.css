@@ -584,3 +584,12 @@ content: '';
 .modal.modal-fixed-header .modal-content {
   overflow-y: auto;
 }
+
+@supports (-ms-ime-align:auto) {
+    .scrolling {
+        max-height: 100% !important;
+    }   
+    .scrolling-2 {
+        max-height: 100% !important;
+    }
+}
