@@ -493,31 +493,7 @@ content: '';
 }
 
 .color-1:hover {
-    color: #7f0d0a;
-}
-
-.color-2:hover {
-    color: #710f0c;
-}
-
-.color-3:hover {
-    color: #63110e;
-}
-
-.color-4:hover {
-    color: #561411;
-}
-
-.color-5:hover {
-    color: #481512;
-}
-
-.color-6:hover {
-    color: #3b0a0a;
-}
-
-.color-7:hover {
-    color: #3b0000;
+    color: black;
 }
 
 /*Section Backgrounds*/
