@@ -272,7 +272,7 @@ body.modal-open {
     background-color: #cc0000;
 }
 
-@supports (-ms-accelerator:true) {
+@-moz-document url-prefix() {
     .exit-btn {
         margin-top: -25px;
     }
