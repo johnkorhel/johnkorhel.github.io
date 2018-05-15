@@ -328,7 +328,7 @@ body.modal-open {
 }
 
 .modal ::-webkit-scrollbar {
-    overflow: visible;
+    overflow: scroll visible;
     height: 7px;
     width: 7px;
 }
