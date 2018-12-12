@@ -72,3 +72,9 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
     background-color: #F6711D;
     border-bottom: 3px solid #0575E6;
 }
+.navbar-toggler:not(:disabled):not(.disabled){
+  outline: 0;
+}
+.navbar-dark .navbar-toggler{
+  border-color: transparent !important;
+}
