@@ -1,198 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Legend Webmaster</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                anchors: ['Legend', 'TSA', 'site', 'brief&chapter'],
-                recordHistory: true,
-                navigation: true,
-				navigationPosition: 'right',
-                navigationTooltips: ['Legend','TSA', 'This Site', 'Design Brief & Chapter'],
-                continuousVertical: true, 
-                menu: '#menu',
-                scrollingSpeed: 600,
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-            is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
-            is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
-            is_safari = navigator.userAgent.indexOf("Safari") > -1;
-            is_opera = navigator.userAgent.indexOf("Presto") > -1;
-            is_mac = (navigator.userAgent.indexOf('Mac OS') != -1);
-            is_windows = !is_mac;
-            if (is_chrome && is_safari) {
-                is_safari = false;
-            }
-            if (is_safari || is_windows) {
-                $('.content').css('font-weight', '300');
-            }
-            if (is_firefox || is_windows) {
-                $('.content').css('font-weight', '300');
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.button-collapse').sideNav({
-                closeOnClick: true
-            });
-            $('.collapsible').collapsible();
-        });
-    </script>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Legend TSA</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/barba.min.js"></script>
+
 </head>
-<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./favicon/faviconpple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#5177EF">
 
 <body>
-   <ul id="slide-out" class="side-nav full" style="z-index: 1011;">
-        <a id="logo-container" class="brand-logo">
-            <object id="front-page-logo" data="favicon/ms-icon-144x144.png"></object>
-        </a>
-        <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="active collapsible-header">Intro</a>
-                <div class="collapsible-body">
-                    <ul id="menu">
-                        <li data-menuanchor="Legend" class="active"><a href="index.html#Legend">Legend</a></li>
-                        <li data-menuanchor="TSA"><a href="index.html#TSA">TSA</a></li>
-                        <li data-menuanchor="site"><a href="index.html#site">This Site</a></li>
-                        <li data-menuanchor="brief&chapter"><a href="index.html#brief&chapter">Brief and Chapter Links</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="bold"> <a class="collapsible-header">Chapter</a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="tech-dept.html">Tech Department</a></li>
-                        <li><a href="officers.html">Advisors & Officers</a></li>
-                        <li><a href="awards.html">Awards</a></li>
-                        <li><a href="community-outreach.html"> Outreach</a></li>
-                        <li><a href="legend-tsa.html">Legend TSA</a></li>
-                    </ul>
-                </div>
-            <li class="bold"> <a class="collapsible-header">Brief</a>
-                <div class="collapsible-body">
-                    <ul id="menu">
-                        <li><a href="brief.html#arrow">Arrow AI</a></li>
-                        <li><a href="brief.html#about">About</a></li>
-                        <li><a href="brief.html#safety">Saefty Concerns and Liabilities</a></li>
-                        <li><a href="brief.html#uses">Potential Uses</a></li>
-                        <li><a href="brief.html#othertech">Available Technologies</a></li>
-                        <li><a href="brief.html#benefits">Benefits</a></li>
-                        <li><a href="brief.html#cost">Cost Overview</a></li>
-                        <li><a href="resources.html">Resources/LEAP</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </ul>
-  
-    <div id="particles-js"></div>
-    <div id="fullpage">
-        <div class="section" id="section0">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="header-sec text-center">
-                            <div class="header-text"> <span class="first">Legend TSA</span> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-menuanchor="about" class="glypharrow">
-                <a style="color: white;" href="#TSA" class="glyphicon glyphicon-chevron-down"><i class="medium material-icons" style="">keyboard_arrow_down</i></a>
+    <div id="barba-wrapper" class="wrapper">
+        <div class="barba-container">
+    <nav class="navbar navbar-expand-lg navbar-dark mainNav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Legend TSA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="techDepartment.html">Tech Department</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advisorsAndOfficers.html">Advisors and Officers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="awards.html">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outreach.html">Outreach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="legendTSA.html">Legend TSA</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="section" id="section1" data-anchor="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 text-center">
-                        <p class="content">The Technology Student Association (TSA) is the only student organization devoted exclusively to the needs of students engaged in science, technology, engineering and mathematics (STEM). Open to students enrolled in or who have completed technology education courses, TSA memberships include over 250,000 middle and high school students in more than 2,000 schools spanning 49 states. TSA is supported by educators, parents and business leaders who believe in the need for a technologically literate society. Members learn through exciting competitive events, leadership opportunities, and much more. The diversity of activities makes TSA a positive experience for every student. From engineers to business managers, our alumni credit TSA with a positive influence on their lives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section2" data-anchor="creation">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 text-center">
-                        <p class="content"> This site was hand coded by Legend High School TSA across multiple CSS and JS frameworks including Materialize, Fullpage.js, Animate.css, and Particles.js. The molecule-like background effect is provided by the Particles.js framework. All images used in the site are either non copyrighted or captured by the team. All sources are cited on the 'resources' page that can be found on the Design Brief link below. The site was created by a team of four individuals, all interested in expanding their knowledge of flat and stylish web design. The site is built mobile first, meaning it is optimized for nearly every screen size.
-                            <br> Enjoy. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section3" data-anchor="brief">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <a href="brief.html">
-                            <div class="card white hoverable">
-                                <div class="card-content black-text">
-                                    <span class="card-title">Design Brief</span>
-                                    <p>Our Design Brief contains information regarding this year's theme, Artificial Intelligence. Click below to see more!</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="brief.html">Brief</a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col s12 m6">
-                        <a href="tech-dept.html">
-                            <div class="card white hoverable">
-                                <div class="card-content black-text">
-                                    <span class="card-title">Our Chapter</span>
-                                    <p>Our Chapter contains information all about our TSA Chapter and what we stand for in the vast TSA community.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="tech-dept.html">Our Chapter</a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
+    </nav>
 
-         
-            <a href="#!" data-activates="slide-out" class="button-collapse">
-                <div id="nav-icon3"> <span></span> <span></span> <span></span> <span></span> </div>
-            </a>
-            <script src="js/particles.js"></script>
-            <script src="js/app.js"></script>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image: url('img/slider2.jpg')">
+                </div>
+                <div class="carousel-item" style="background-image: url('img/slider1.jpg')">
+                </div>
+                <div class="carousel-item" style="background-image: url('img/slider3.jpg')">
+
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--<script>
+          $('document').ready(function(){
+              Barba.Pjax.cacheEnabled = false
+            var transEffect = Barba.BaseTransition.extend({
+                start: function(){
+                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+                },
+                fadeInNewcontent: function(nc) {
+                  nc.hide();
+                  var _this = this;
+                  $(this.oldContainer).fadeOut(1000).promise().done(() => {
+                    nc.css('visibility','visible');
+                    nc.fadeIn(1000, function(){
+                      _this.done();
+                    })
+                  });
+                }
+            });
+            Barba.Pjax.getTransition = function() {
+              return transEffect;
+            }
+            Barba.Pjax.start();
+          });
+  </script> -->
+
 </body>
 
 </html>
