@@ -8,8 +8,6 @@ body {
   background-color: #FFFFFF;
   font-family: Open Sans;
   padding-top: 60px;
-  overflow: hidden;
-
 }
 .mainNav{
     background: #0575E6;  /* fallback for old browsers */
@@ -54,4 +52,23 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   z-index: 20;
   color: white;
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.content{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e1f5fe !important;
+}
+.pageDesc{
+    padding-top: 35px;
+}
+.table td, .table th{
+    padding: 1rem;
+    vertical-align: top;
+    border: 0px;
+    font-size: 20px;
+}
+.table .thead-dark th{
+    background-color: #F6711D;
+    border-bottom: 3px solid #0575E6;
 }
