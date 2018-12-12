@@ -3,19 +3,22 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
  */
-
 body {
   background-color: #FFFFFF;
   font-family: Open Sans;
   padding-top: 60px;
 }
-.mainNav{
-    background: #0575E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    box-shadow: 0px 5px #F6711D;
+.mainNav {
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px 5px #F6711D;
 }
+
 .carousel-item {
   height: 100vh;
   filter: brightness(60%);
@@ -26,7 +29,8 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   -o-background-size: cover;
   background-size: cover;
 }
-.headerItem{
+
+.headerItem {
   height: 50vh;
   min-height: 300px;
   background: no-repeat center center scroll;
@@ -34,47 +38,60 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+.pageHeader {
+  font-family: Open Sans;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFFFFF;
 }
-.pageHeader{
-    font-family: Open Sans;
-    font-size: 50px;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #FFFFFF;
-}
+
 .carousel-content {
   position: absolute;
   bottom: 10%;
   left: 5%;
   z-index: 20;
   color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-.content{
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #e1f5fe !important;
+
+.content {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e1f5fe !important;
 }
-.pageDesc{
-    padding-top: 35px;
+
+.pageDesc {
+  padding-top: 35px;
 }
-.table td, .table th{
-    padding: 1rem;
-    vertical-align: top;
-    border: 0px;
-    font-size: 20px;
+
+.table td, .table th {
+  padding: 1rem;
+  vertical-align: top;
+  border: 0px;
+  font-size: 20px;
 }
-.table .thead-dark th{
-    background-color: #F6711D;
-    border-bottom: 3px solid #0575E6;
+
+.table .thead-dark th {
+  background-color: #F6711D;
+  border-bottom: 3px solid #0575E6;
 }
-.navbar-toggler:not(:disabled):not(.disabled){
+
+.navbar-toggler:not(:disabled):not(.disabled) {
   outline: 0;
 }
-.navbar-dark .navbar-toggler{
+
+.navbar-dark .navbar-toggler {
   border-color: transparent !important;
+}
+.subHeader{
+  font-family: Open Sans;
+  font-size: 50px;
+  text-align: left;
+  color: #313E50;
 }
