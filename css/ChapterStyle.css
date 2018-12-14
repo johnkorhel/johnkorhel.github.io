@@ -252,6 +252,7 @@ body.modal-open {
 .content::-webkit-scrollbar-thumb:click {
     background: #555; 
 }
+
 @keyframes line_animation {
     from { width: 0%; }
     to { width: 150px; }
