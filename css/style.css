@@ -59,7 +59,7 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
-.content {
+.content1 {
   font-size: 25px;
   padding: 10px;
   border-radius: 5px;
@@ -95,3 +95,49 @@ body {
   text-align: left;
   color: #313E50;
 }
+
+/* Colors */
+.bg-blue-lighten-1 {
+    background-color: #42a5f5
+}
+
+.bg-blue {
+    background-color: #2196f3;
+}
+
+.bg-blue-darken-1 {
+    background-color: #1e88e5;
+}
+
+.bg-blue-darken-2 {
+    background-color: #1976d2;
+}
+
+.bg-blue-darken-3 {
+    background-color: #1565c0;
+}
+
+.bg-blue-darken-4 {
+    background-color: #0d47a1;
+}
+
+.spin {
+        
+        animation: spin .75s ease-out;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+.fadeIn {
+        
+        animation: fadeIn .75s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 100; }
+    }
+
