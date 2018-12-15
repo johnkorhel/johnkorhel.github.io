@@ -204,10 +204,10 @@ body.modal-open {
     position: fixed;
 }
 
-/*.link-anchor{
+.link-anchor{
     padding-top: 65px;
     margin-top: -65px;
-}*/
+}
 
 .content {
     position:absolute;
