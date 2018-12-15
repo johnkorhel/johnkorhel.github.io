@@ -68,7 +68,14 @@ html {
   font-size: 25px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #e1f5fe !important;
+  background-color: #fff3e0 !important;
+}
+
+.content2 {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color:  !important;
 }
 
 .pageDesc {
@@ -191,4 +198,12 @@ html {
 
 .exit-btn-text:hover {
     color: #cc0000;
+}
+.outreachImg{
+  max-height: 300px;
+}
+@media screen and (max-width: 990px) {
+  .outreachImg {
+    padding: 20px;
+  }
 }
