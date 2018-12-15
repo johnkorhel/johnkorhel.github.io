@@ -126,6 +126,30 @@ html {
     background-color: #0d47a1;
 }
 
+.blue-lighten-1 {
+    color: #42a5f5
+}
+
+.blue {
+    color: #2196f3;
+}
+
+.blue-darken-1 {
+    color: #1e88e5;
+}
+
+.blue-darken-2 {
+    color: #1976d2;
+}
+
+.blue-darken-3 {
+    color: #1565c0;
+}
+
+.blue-darken-4 {
+    color: #0d47a1;
+}
+
 .card-text{
   color:white;
 }
@@ -150,4 +174,21 @@ html {
 
 .hoverable:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.exit-btn {
+    margin-top: 20px;
+    background-color: indianred;
+}
+
+.exit-btn:hover {
+    background-color: #cc0000;
+}
+
+.exit-btn-text {
+    color: indianred;
+}
+
+.exit-btn-text:hover {
+    color: #cc0000;
 }
