@@ -38,7 +38,7 @@
 .title-hr {
     padding-top: 1px;
     border: none;
-    background-color: darkblue;
+    background-color: #1565c0;
 }
 
 .title-bar {
@@ -115,13 +115,13 @@
     z-index: 1003;
     position: fixed !important;
     font-family: Lato;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 #logo-container {
     height: 100px;
     margin-bottom: 32px;
-    padding-top: 10px; 
+    padding-top: 10px;
     background-color: white;
 }
 
@@ -177,7 +177,7 @@ html {
     right: auto;
     padding-right: 20px;
     margin-top: -20px;
- 
+
 }
 
 #x:hover {
@@ -215,7 +215,7 @@ body.modal-open {
     left:0px;
     right:0px;
     bottom:0px;
-    overflow-y:scroll;        
+    overflow-y:scroll;
 }
 
 .title-bar {
@@ -250,7 +250,7 @@ body.modal-open {
 
 /* Handle on hover */
 .content::-webkit-scrollbar-thumb:click {
-    background: #555; 
+    background: #555;
 }
 
 /*Growing Line on Tech Department*/
