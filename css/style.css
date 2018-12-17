@@ -223,3 +223,6 @@ html {
     animation: line_animation_200 1s ease-in;
     width: 75%;
 }
+.card-text-tech{
+    color: #000000;
+}
