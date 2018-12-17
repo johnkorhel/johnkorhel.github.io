@@ -76,6 +76,7 @@ html {
   padding: 10px;
   border-radius: 5px;
   background-color:  !important;
+  background-color: #fff3e0;
 }
 
 .pageDesc {
@@ -206,4 +207,19 @@ html {
   .outreachImg {
     padding: 20px;
   }
+}
+
+.teachers{
+    font-size: 20px;
+}
+.title-hr {
+    padding-top: 1px;
+    border: none;
+    background-color: #1565c0;
+}
+.line-500px {
+    border-bottom: solid 1px gray;
+    border-top-width: 0px;
+    animation: line_animation_200 1s ease-in;
+    width: 75%;
 }

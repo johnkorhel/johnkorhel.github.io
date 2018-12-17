@@ -264,6 +264,7 @@ body.modal-open {
     border-top-width: 0px;
     animation: line_animation 1s ease-in;
     width: 150px;
+    background-color: #1565c0;
 }
 
 @keyframes line_animation_200 {
