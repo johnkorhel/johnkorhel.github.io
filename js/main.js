@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 var HideShowTransition = Barba.BaseTransition.extend({
   start: function() {
     this.newContainerLoading.then(this.finish.bind(this));
@@ -10,6 +11,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
 });
 Barba.Pjax.getTransition = function() {
   return HideShowTransition;
+};
 };
 Barba.Prefetch.init();
 Barba.Pjax.start();
