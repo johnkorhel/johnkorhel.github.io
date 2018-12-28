@@ -67,6 +67,8 @@ html {
 .content1 {
   font-size: 25px;
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   background-color: #e1f5fe !important;
 }
@@ -74,6 +76,8 @@ html {
 .content2 {
   font-size: 25px;
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   background-color:  !important;
   background-color: #fff3e0;
