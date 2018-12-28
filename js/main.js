@@ -12,6 +12,12 @@ var HideShowTransition = Barba.BaseTransition.extend({
 Barba.Pjax.getTransition = function() {
   return HideShowTransition;
 };
-};
+});
 Barba.Prefetch.init();
 Barba.Pjax.start();
+
+$(document).ready(function(){
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+});
