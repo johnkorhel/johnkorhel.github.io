@@ -225,9 +225,13 @@ html {
 }
 
 .title-hr {
-    padding-top: 1px;
+    padding-top: 2px;
     border: none;
     background-color: #1565c0;
+    width: 75%;
+    margin-bottom: 30px;
+    border-top-width: 0px;
+    animation: line_animation_200 1s ease-in;
 }
 
 .line-500px {

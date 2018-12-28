@@ -35,11 +35,6 @@
     padding-right: 50px;
 }
 
-.title-hr {
-    padding-top: 1px;
-    border: none;
-    background-color: #1565c0;
-}
 
 .title-bar {
     padding: 5px;
@@ -287,12 +282,6 @@ body.modal-open {
     }
 }
 
-.line-200px {
-    border-bottom: solid 1px gray;
-    border-top-width: 0px;
-    animation: line_animation_200 1s ease-in;
-    width: 200px;
-}
 
 :focus {
     outline: none;
