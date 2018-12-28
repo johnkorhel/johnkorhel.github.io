@@ -60,6 +60,5 @@ Barba.Pjax.getTransition = function() {
 
   return FadeTransition;
 };
-});
 Barba.Prefetch.init();
 Barba.Pjax.start();
