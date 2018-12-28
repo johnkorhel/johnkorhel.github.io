@@ -1,5 +1,6 @@
 var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
+
     /**
      * This function is automatically called as soon the Transition starts
      * this.newContainerLoading is a Promise for the loading of the new container

@@ -226,3 +226,8 @@ html {
 .card-text-tech{
     color: #000000;
 }
+
+
+button::-moz-focus-inner {
+  border: 0;
+}
