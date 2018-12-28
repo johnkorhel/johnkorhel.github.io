@@ -15,9 +15,3 @@ Barba.Pjax.getTransition = function() {
 });
 Barba.Prefetch.init();
 Barba.Pjax.start();
-
-$(document).ready(function(){
-    var myLazyLoad = new LazyLoad({
-        elements_selector: ".lazy"
-    });
-});
