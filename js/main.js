@@ -1,3 +1,4 @@
+
 var FadeTransition = Barba.BaseTransition.extend({
     start: function() {
 
@@ -24,6 +25,7 @@ var FadeTransition = Barba.BaseTransition.extend({
     },
 
     fadeIn: function() {
+        $(window).scrollTop(0);
         /**
          * this.newContainer is the HTMLElement of the new Container
          * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
@@ -58,6 +60,7 @@ var FadeTransition = Barba.BaseTransition.extend({
  */
 
 Barba.Pjax.getTransition = function() {
+
     /**
      * Here you can use your own logic!
      * For example you can use different Transition based on the current page or link...
