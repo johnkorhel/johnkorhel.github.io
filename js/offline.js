@@ -1,4 +1,4 @@
 UpUp.start({
   'content-url': 'offline.html',
-  'assets': ['css/bootstrap.min.css', 'css/style.css']
+  'assets': ['bootstrap.min.css', 'style.css']
 });
