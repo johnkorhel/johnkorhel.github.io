@@ -1,6 +1,3 @@
-$('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('toggle');
-      });
 var FadeTransition = Barba.BaseTransition.extend({
     start: function() {
 
