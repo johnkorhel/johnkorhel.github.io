@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    $('.navbar-collapse a').click(function(e) {
+$('.navbar-collapse a').click(function(e) {
         $('.navbar-collapse').collapse('toggle');
     });
     var url = window.location;
@@ -7,4 +6,3 @@ $(document).ready(function() {
     $('ul.nav a').filter(function() {
         return this.href == url;
     }).parent().addClass('active');
-});
