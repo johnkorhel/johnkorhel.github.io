@@ -116,7 +116,7 @@ html {
   margin-bottom: 20px;
   border-radius: 5px;
   color: #FFFFFF;
-  background-color: #81d4fa;
+  background-color: #90caf9;
 }
 .contentJs {
   font-size: 25px;
@@ -144,6 +144,15 @@ html {
   border-radius: 5px;
   color: #FFFFFF;
   background-color: #ffcc80;
+}
+.contentGit {
+  font-size: 25px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #ef9a9a;
 }
 
 .pageDesc {
