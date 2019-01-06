@@ -579,3 +579,9 @@ body.modal-open {
         display: none;
     }
 }
+.aboutSub{
+  font-size: 20px;
+}
+.aboutImg{
+  width: 20%;
+}
