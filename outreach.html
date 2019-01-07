@@ -28,7 +28,7 @@
             });
         }
     </script>
-    <script src="js/pace.js"></script>
+  <script src="js/pace.js"></script>
 </head>
 
 <body>
@@ -84,9 +84,9 @@
 
     <div class="container">
       <div class="row">
-        <img src="img/outreach/f-blankets.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/r-blankets.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/penny-stalls.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/f-blankets.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/r-blankets.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/penny-stalls.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
       </div>
     </div>
     <div class="container">
@@ -106,9 +106,9 @@
 
     <div class="container">
       <div class="row">
-        <img src="img/outreach/bb1.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/bb2.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/bb4.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/bb1.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/bb2.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/bb4.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
       </div>
     </div>
     <div class="container">
@@ -131,9 +131,9 @@
 
     <div class="container">
       <div class="row">
-        <img src="img/outreach/ce1.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/ce2.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/ce3.JPG" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/ce1.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/ce2.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/ce3.JPG" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
       </div>
     </div>
     <div class="container">
@@ -151,9 +151,9 @@
 
     <div class="container">
       <div class="row">
-        <img src="img/outreach/wish-week.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/alex-penny.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
-        <img src="img/outreach/star-wall.jpg" class="outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/wish-week.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/alex-penny.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
+        <img src="img/outreach/star-wall.jpg" class="lazy outreachImg col-12 col-md-4 img-responsive" alt="Responsive image">
       </div>
     </div>
     <div class="container">
@@ -177,6 +177,12 @@
   </footer>
   <script src="upup.min.js"></script>
   <script src="js/offline.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+  <script>
+  var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+  </script>
 </body>
 
 </html>
