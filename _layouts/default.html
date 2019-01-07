@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="Description" content="Legend TSA Webmaster 2019." />
+  <meta name="author" content="Joj" />
+  <title>{{ page.title }}</title>
+  <link href="/bootstrap.min.css" rel="stylesheet" />
+  <link href="/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/pace.js"></script>
+  <script>
+    if ($(window).width() <= 1200) {
+            $('.navbar-collapse a').click(function(e) {
+                $('.navbar-collapse').collapse('toggle');
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark mainNav fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Legend TSA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          {% if page.active == "home" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          {% endif %}
+
+          {% if page.active == "tech" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Tech Department</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/techDepartment">Tech Department</a></li>
+          {% endif %}
+
+          {% if page.active == "advisors" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Advisors and Officers</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/advisorsAndOfficers">Advisors and Officers</a></li>
+          {% endif %}
+
+          {% if page.active == "awards" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Awards</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/awards">Awards</a></li>
+          {% endif %}
+
+          {% if page.active == "outreach" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Outreach</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/outreach">Outreach</a></li>
+          {% endif %}
+
+          {% if page.active == "lhstsa" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Legend TSA</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/legendTSA">Legend TSA</a></li>
+          {% endif %}
+
+          {% if page.active == "about" %}
+              <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          {% endif %}
+
+          {% if page.active == "brief" %}
+              <li class="nav-item"><a class="nav-link active" href="#">Design Brief</a></li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="/brief">Design Brief</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {{ content }}
+  <script src="/upup.min.js"></script>
+  <script src="/js/offline.js"></script>
+</body>
+</html>
