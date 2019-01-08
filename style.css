@@ -694,3 +694,6 @@ body.modal-open {
   -o-transform: rotate(3deg) translate(0px, -4px);
   transform: rotate(3deg) translate(0px, -4px);
 }
+.card-header{
+  background-color: #FFFFFF;
+}
