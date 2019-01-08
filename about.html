@@ -1,73 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="Description" content="Legend TSA Webmaster 2019." />
-  <meta name="author" content="Joj">
-  <title>Legend TSA</title>
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script>
-    if ($(window).width() <= 1200) {
-            $('.navbar-collapse a').click(function(e) {
-                $('.navbar-collapse').collapse('toggle');
-            });
-        }
-    </script>
-    <script src="js/pace.js"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-xl navbar-dark mainNav fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Legend TSA</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="techDepartment">Tech Department</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="advisorsAndOfficers">Advisors and Officers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="awards">Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="outreach">Outreach</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="legendTSA">Legend TSA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="brief">Design Brief</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+---
+layout: default
+title: About
+active: about
+---
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-12 pageDesc">
@@ -81,7 +16,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/htmlcss.svg" alt="HTML5 & CSS3">
+        <img class="mr-3 aboutImg" src="/img/about/htmlcss.svg" alt="HTML5 & CSS3">
         <div class="media-body">
           <h5 class="mt-0 contentHtmlCss">HTML5 & CSS3</h5>
           <span class="aboutSub">HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), are the backbone of all front end web development products.</span>
@@ -95,7 +30,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/test.png" alt="JavaScript">
+        <img class="mr-3 aboutImg" src="/img/about/test.png" alt="JavaScript">
         <div class="media-body">
           <h5 class="mt-0 contentJs">JavaScript</h5>
           <span class="aboutSub">JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also
@@ -110,7 +45,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/bootstrap.png" alt="Bootstrap 4">
+        <img class="mr-3 aboutImg" src="/img/about/bootstrap.png" alt="Bootstrap 4">
         <div class="media-body">
           <h5 class="mt-0 contentBootstrap">Bootstrap 4</h5>
           <span class="aboutSub">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype ideas or build entire apps with SASS variables and mixins, responsive grid system, extensive prebuilt components, and
@@ -125,7 +60,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/lighthouse.png" alt="Lighthouse">
+        <img class="mr-3 aboutImg" src="/img/about/lighthouse.png" alt="Lighthouse">
         <div class="media-body">
           <h5 class="mt-0 contentLighthouse">Google Lighthouse</h5>
           <span class="aboutSub">Lighthouse is an open-source, automated tool for improving the quality of web pages. It can be run against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive
@@ -139,7 +74,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/cloudflare.svg" alt="Cloudflare">
+        <img class="mr-3 aboutImg" src="/img/about/cloudflare.svg" alt="Cloudflare">
         <div class="media-body">
           <h5 class="mt-0 contentCloud">Cloudflare</h5>
           <span class="aboutSub">Trusted by over 12 million domains, Cloudflare is one of the world’s largest cloud network platforms. Give global users a faster, more secure, and more reliable internet experience.</span>
@@ -152,7 +87,7 @@
   <div class="container">
     <div class="col-12 col-md-12 pageDesc">
       <div class="media">
-        <img class="mr-3 aboutImg" src="img/about/git.png" alt="Source Code">
+        <img class="mr-3 aboutImg" src="/img/about/git.png" alt="Source Code">
         <div class="media-body">
           <h5 class="mt-0 contentGit">Source Code</h5>
           <span class="aboutSub">The source code to this website, which is controlled through Git, can be found <a href="https://github.com/johnkorhel/johnkorhel.github.io" target="_blank">here</a>.</span><br><br>
@@ -162,16 +97,3 @@
     </div>
 
   </div>
-
-
-
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">@2018-2019 Copyright Legend TSA</span>
-    </div>
-  </footer>
-  <script src="upup.min.js"></script>
-  <script src="js/offline.js"></script>
-</body>
-
-</html>
