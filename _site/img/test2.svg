@@ -1,1 +1,1 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 369 525"><defs><style>.cls-1{fill:#f37026;}.cls-2{fill:#184691;}</style></defs><title>test2</title><path class="cls-1" d="M0,0H43.5V300.5h144V337H0Z"/><path class="cls-2" d="M222,225H119.5V188H369v37H266V525H222Z"/></svg>
+<svg viewBox="0 0 369 525" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h43.5v300.5h144v36.5h-187.5z" fill="#f37026"/><path d="m222 225h-102.5v-37h249.5v37h-103v300h-44z" fill="#184691"/></svg>
