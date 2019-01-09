@@ -23,122 +23,13 @@ active: awards
           </tr>
         </thead>
         <tbody>
+          {% for award in site.data.awards %}
           <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">android</i>Animatronics</th>
-            <td>3</td>
-            <td>0</td>
+            <th scope="row">{{award.name}}</th>
+            <td>{{award.state}}</td>
+            <td>{{award.nats}}</td>
           </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">invert_colors</i>Biotechnology Design</th>
-            <td>4</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">gavel</i>Catapult Design</th>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">perm_identity</i>Chapter Team</th>
-            <td>2</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">tab_unselected</i>CAD Architecture</th>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">video_call</i>Digital Video Production</th>
-            <td>4</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">motorcycle</i>Dragster Design</th>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">receipt</i>Essays on Technology</th>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">flight_takeoff</i>Flight Endurance</th>
-            <td>2</td>
-            <td>0</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">grade</i>Future Tech Teacher</th>
-            <td>5</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">music_note</i>Music Production</th>
-            <td>8</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">videocam</i>On-Demand Video</th>
-            <td>3</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">camera</i>Photographic Technology</th>
-            <td>4</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">crop_original</i>Pin Design</th>
-            <td>2</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">person</i>Prepared Presentation</th>
-            <td>3</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">new_releases</i>Promotional Design</th>
-            <td>7</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">layers</i>Scivis</th>
-            <td>5</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">devices_other</i>Software Development</th>
-            <td>3</td>
-            <td>0</td>
-          </tr>
-
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">account_box</i>T-Shirt Design</th>
-            <td>5</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">local_car_wash</i>Underwater ROV</th>
-            <td>3</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">games</i>Video Game Design</th>
-            <td>5</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th scope="row"><i class="material-icons small" style="padding-right: 10px;">settings_ethernet</i>Webmaster</th>
-            <td>4</td>
-            <td>1</td>
-          </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>
