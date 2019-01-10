@@ -12,76 +12,19 @@ active: about
     </div>
   </div>
 </div>
+{% for about in site.about %}
 <div class="container">
   <div class="col-12 col-md-12 pageDesc">
     <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/html.png" alt="HTML5 & CSS3">
+      <img class="mr-3 aboutImg" src="{{about.src}}" alt="Cloudflare">
       <div class="media-body">
-        <h5 class="mt-0 contentHtmlCss">HTML5 & CSS3</h5>
-        <span class="aboutSub">HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), are the backbone of all front end web development products.</span>
+        <h5 class="mt-0 {{about.color}}">{{about.name}}</h5>
+        <span class="aboutSub">{{about.about}}</span>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="col-12 col-md-12 pageDesc">
-    <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/js.jpg" alt="JavaScript">
-      <div class="media-body">
-        <h5 class="mt-0 contentJs">JavaScript</h5>
-        <span class="aboutSub">JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also
-          use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="col-12 col-md-12 pageDesc">
-    <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/bootstrap.png" alt="Bootstrap 4">
-      <div class="media-body">
-        <h5 class="mt-0 contentBootstrap">Bootstrap 4</h5>
-        <span class="aboutSub">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype ideas or build entire apps with SASS variables and mixins, responsive grid system, extensive prebuilt components, and
-          powerful plugins built on jQuery.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="col-12 col-md-12 pageDesc">
-    <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/ruby.png" alt="Bootstrap 4">
-      <div class="media-body">
-        <h5 class="mt-0 contentJekyll">Jekyll</h5>
-        <span class="aboutSub">Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site
-          generator".</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="col-12 col-md-12 pageDesc">
-    <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/lighthouse.png" alt="Lighthouse">
-      <div class="media-body">
-        <h5 class="mt-0 contentLighthouse">Google Lighthouse</h5>
-        <span class="aboutSub">Lighthouse is an open-source, automated tool for improving the quality of web pages. It can be run against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive
-          web apps, and more.</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="col-12 col-md-12 pageDesc">
-    <div class="media">
-      <img class="mr-3 aboutImg" src="/img/about/cloudflare.svg" alt="Cloudflare">
-      <div class="media-body">
-        <h5 class="mt-0 contentCloud">Cloudflare</h5>
-        <span class="aboutSub">Trusted by over 12 million domains, Cloudflare is one of the world’s largest cloud network platforms. Give global users a faster, more secure, and more reliable internet experience.</span>
-      </div>
-    </div>
-  </div>
-</div>
+{% endfor %}
 <div class="container">
   <div class="col-12 col-md-12 pageDesc">
     <div class="media">
