@@ -1,5 +1,5 @@
 ---
-name: Debbie Tawzer
+name: Ed Watterson
 contact: datawzer@dcsdk12.org
 about: Mrs. Tawzer has been a technology and engineering teacher at Legend High School for several years and has helped her students win countless TSA events.
 college: UNC - University of North Colorado
