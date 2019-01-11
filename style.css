@@ -717,3 +717,24 @@ body.modal-open {
 .card-header{
   background-color: #FFFFFF;
 }
+.techBtn{
+  background-color: #64b5f6;
+  color: #FFFFFF;
+}
+.techBtn:hover{
+  color: #FFFFFF;
+}
+.briefBtn{
+  background-color: #ff8a65;
+  color: #FFFFFF;
+}
+.briefBtn:hover{
+  color: #FFFFFF;
+}
+.aboutBtn{
+  background-color: #e57373 ;
+  color: #FFFFFF;
+}
+.aboutBtn:hover{
+  color: #FFFFFF;
+}

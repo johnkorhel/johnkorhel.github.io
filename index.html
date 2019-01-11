@@ -9,10 +9,17 @@ active: home
     <div class="wrapper">
         <div class="container">
           <object class="indexImg" data="img/test.svg" type="image/svg+xml" alt="Logo"></object>
-          <a class="btn btn-secondary" href="techDepartment" role="button">Tech Department</a>
-          <a class="btn btn-secondary" href="brief" role="button">Design Brief</a>
-          <a class="btn btn-secondary" href="about" role="button">About</a>
-        </div>
+          <div class="d-none d-sm-block">
+          <a class="btn techBtn" href="techDepartment" role="button">Tech Department</a>
+          <a class="btn briefBtn" href="brief" role="button">Design Brief</a>
+          <a class="btn aboutBtn" href="about" role="button">About</a>
+          </div>
+          <div class="visible-xs">
+          <button type="button" href="techDepartment" class="btn techBtn btn-lg btn-block d-sm-none">Tech Department</button>
+          <button type="button" href="brief" class="btn briefBtn btn-lg btn-block d-sm-none">Design Brief</button>
+          <button type="button" href="techDepartment" class="btn aboutBtn btn-lg btn-block d-sm-none">About</button>
+          </div>
+          </div>
     </div>
   </div>
   <script src="js/particles.js"></script>
