@@ -1,0 +1,44 @@
+body {
+    background-color: #FFFFFF;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  .header{
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 100px;
+  }
+  .subHeader{
+      font-family: 'Roboto';
+      font-weight: 100;
+      font-size: 30px;
+  }
+  #fp-nav ul li .fp-tooltip{
+      color: #000000;
+  }
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+  ::-moz-selection{
+    background-color:Transparent;
+    color:#000;
+    }
+
+    ::selection {
+    background-color:Transparent;
+    color:#000;
+    }
+.myclass::-moz-selection,
+.myclass::selection { ... }
+.pageStyle{
+    position: absolute;
+    left:0;
+    top:0;
+}
