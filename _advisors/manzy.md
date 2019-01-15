@@ -1,9 +1,9 @@
 ---
 name: Katie Manzanares
 contact: mkmanzanares@dcsdk12.org
-about: Mrs. Tawzer has been a technology and engineering teacher at Legend High School for several years and has helped her students win countless TSA events.
-college: UNC - University of North Colorado
-career: Always wanted to go into teaching because "I loved it, and I always loved working with kids".
-major: Applied Mathematics B.S.
+about: Heading several graphic design and career building programs, as well as running Legend High School's EDGE program, Mrs. Manzanares is essential to the CTE operation.
+college: Metro State University
+career: Mrs. Manzanares originally sought a career related to graphics design or IT, but chose a different path; educating the leaders of tomorrow.
+major: Computer Science B.S.
 modal: manzyModal
 ---
