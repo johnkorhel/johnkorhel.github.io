@@ -24,7 +24,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: 2;
   }
   ::-moz-selection{
     background-color:Transparent;
@@ -50,4 +50,8 @@ body {
     font-weight: 100;
     font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table-szn{
+    background-color: transparent;
+    font-family: 'Roboto';
 }
