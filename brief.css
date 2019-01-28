@@ -24,7 +24,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: -100;
+    z-index: 1;
   }
   ::-moz-selection{
     background-color:Transparent;
@@ -69,5 +69,11 @@ body {
     border-radius: 0px;
     font-family: 'Roboto';
     width: 200px;
-    z-index: 100;
+    z-index: 1000;
+    position:relative;
+    
+}
+.sc{
+    z-index: 1000;
+    position:relative;
 }
