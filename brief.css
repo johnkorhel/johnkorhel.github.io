@@ -42,6 +42,24 @@ body {
     left:0;
     top:0;
 }
+
+@media only screen and (min-width: 600px){
+    .pageStyle2{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+@media only screen and (max-width: 599px){
+    .pageStyle2{
+        left: 0;
+        top: 0;
+        padding-bottom: 1em;
+    }
+    #fp-nav.fp-right{
+        display: none;
+    }
+}
 .content{
     background-color: #FFFFFF;
     padding: 20px;
