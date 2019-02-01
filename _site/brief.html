@@ -22,7 +22,10 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    
+    <style>html { visibility:hidden; }</style>
+
+<div id="particles-js"></div>
 <div id="fullpage">
     <div class="section " id="section0">
         <div class="intro">
@@ -403,14 +406,11 @@
             </div>
         </div>
     </div>
-
+    
+    
     <script src="/js/particles.js"></script>
     <script src="/js/app.js"></script>
     <script src="js/fullpage.min.js"></script>
-    <script src="/js/jquery.min.js" async defer></script>
-    <script src="/js/bootstrap.bundle.min.js" async defer></script>
-    <script src="/upup.min.js" async></script>
-    <script src="/offline.js" async defer></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             menu: '#menu',
@@ -424,6 +424,16 @@
             menu: '#menu'
         });
     </script>
+    <script src="/js/jquery.min.js"></script>
+    
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/upup.min.js"></script>
+    <script src="/offline.js"></script>
+    <script>
+            $(document).ready(function() {
+          document.getElementsByTagName("html")[0].style.visibility = "visible";
+        });
+            </script>
 </body>
 
 </html>
