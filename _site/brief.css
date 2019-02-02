@@ -105,8 +105,9 @@ body {
     
 }
 .sc{
-    z-index: 1000;
+    z-index: 1;
     position:relative;
+    overflow: hidden;
 }
 .blogHead{
     font-size: 28;
@@ -172,3 +173,8 @@ body {
     max-height: 500px;
     overflow: scroll;
   }
+iframe {
+    overflow: scroll;
+    max-width: 100%;
+    height: auto;
+}
