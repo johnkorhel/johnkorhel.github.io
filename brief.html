@@ -230,6 +230,66 @@ layout: brief
         </div>
     </div>
 </div>
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Quantity</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Product</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>Drop Logo T-Shirt</option>
+                                <option>SZNS Text & Logo T-Shirt</option>
+                                <option>Lower Logo T-Shirt</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="control-label">State</label>
+
+                            <select class="form-control" id="state" name="state">
+                                <option value="">N/A</option>
+                                {% for state in site.data.states %}
+                                <option value="state.val">{{state.name}}</option>
+                                {% endfor %}
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Zip Code</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Address Line 1</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Address Line 2</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
     <div class="modal-dialog Mainmodal-dialog" role="document">
         <div class="modal-content Mainmodal-content">
@@ -309,68 +369,3 @@ layout: brief
         </div>
     </div>
 </div>
-<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Shop</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Quantity</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect2">Product</label>
-                                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                                        <option>Drop Logo T-Shirt</option>
-                                        <option>SZNS Text & Logo T-Shirt</option>
-                                        <option>Lower Logo T-Shirt</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="state" class="control-label">State</label>
-
-                                    <select class="form-control" id="state" name="state">
-                                        <option value="">N/A</option>
-                                        {% for state in site.data.states %}
-                                        <option value="state.val">{{state.name}}</option>
-                                        {% endfor %}
-                                    </select>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Zip Code</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Address Line 1</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Address Line 2</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>

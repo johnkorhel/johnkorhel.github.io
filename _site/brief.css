@@ -159,10 +159,7 @@ body {
     float: right;
     margin: 20px;
 }
-body.modal-open{
-    overflow: hidden;
-    height: 100%;
-  }
+
   .modal-content {
     position: relative;
     background-color: #fff;
