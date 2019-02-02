@@ -24,7 +24,7 @@
 <body>
     
     <style>html { visibility:hidden; }</style>
-
+<script type="text/javascript" src="jquery/fullpage.js"></script>
 <div id="fullpage">
     <div class="section " id="section0">
         <div class="intro">
@@ -159,28 +159,18 @@
                                 <td>FEB 02</td>
                                 <td>530PM</td>
                             </tr>
-                            <tr>
-                                <th scope="row">PERTH, WA, AUSTRALIA</th>
-                                <td>RAC ARENA</td>
-                                <td>DEC 07</td>
-                                <td>7PM</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">ADELAIDE, SA, AUSTRALIA</th>
-                                <td>ADELAIDE ENTERTAINMENT CENTRE</td>
-                                <td>DEC 10</td>
-                                <td>730PM</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">MELBOURNE, VIC, AUSTRALIA</th>
-                                <td>ROD LAVER ARENA</td>
-                                <td>DEC 13</td>
-                                <td>8PM</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="row">
+                    <div class="col-3 offset-3 col-sm-4 offset-sm-4 col-md-3 offset-md-4 col-lg-3 offset-lg-5">
+                        <a href="#" id="turnOff" class="btn sznBtn" data-toggle="modal" data-target="#buyModal2">Buy</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container">
+        
         </div>
     </div>
     <div class="section" id="section4">
@@ -234,7 +224,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" class="btn sznBtn" data-toggle="modal" data-target="#blogModal">View SZNS' blog</a>
+                <a href="#" id="turnOff" class="btn sznBtn" data-toggle="modal" data-target="#blogModal">View SZNS' blog</a>
             </div>
         </div>
     </div>
@@ -401,7 +391,174 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary exit" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="buyModal2" tabindex="-1" role="dialog" aria-labelledby="buyModal2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Quantity</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="product" class="control-label">Product</label>
+
+                            <select class="form-control" id="state" name="state">
+                                <option value="">N/A</option>
+                                <option>Rac Arena</option>
+                                <option>Adelaide Entertainment Centre</option>
+                                <option>Rod Laver Arena</option>
+                                <option>Qudos Bank Arena</option>
+                                <option>BrisBane Entertainment Center</option>
+                                <option>Spark Arena</option>
+                                <option>IHeartRadio Alter Ego 2019 The Forum</option>
+                                <option>Kiev Palace of Sports</option>
+                                <option>VTB Arena</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="control-label">State</label>
+
+                            <select class="form-control" id="state" name="state">
+                                <option value="">N/A</option>
+                                
+                                <option value="state.val">Alabama</option>
+                                
+                                <option value="state.val">Alaska</option>
+                                
+                                <option value="state.val">Arizona</option>
+                                
+                                <option value="state.val">Arkansas</option>
+                                
+                                <option value="state.val">California</option>
+                                
+                                <option value="state.val">Colorado</option>
+                                
+                                <option value="state.val">Connecticut</option>
+                                
+                                <option value="state.val">Delaware</option>
+                                
+                                <option value="state.val">Florida</option>
+                                
+                                <option value="state.val">Georgia</option>
+                                
+                                <option value="state.val">Hawaii</option>
+                                
+                                <option value="state.val">Idaho</option>
+                                
+                                <option value="state.val">Illinois</option>
+                                
+                                <option value="state.val">Indiana</option>
+                                
+                                <option value="state.val">Iowa</option>
+                                
+                                <option value="state.val">Kansas</option>
+                                
+                                <option value="state.val">Kentucky</option>
+                                
+                                <option value="state.val">Louisiana</option>
+                                
+                                <option value="state.val">Maine</option>
+                                
+                                <option value="state.val">Maryland</option>
+                                
+                                <option value="state.val">Massachusetts</option>
+                                
+                                <option value="state.val">Michigan</option>
+                                
+                                <option value="state.val">Minnesota</option>
+                                
+                                <option value="state.val">Mississippi</option>
+                                
+                                <option value="state.val">Missouri</option>
+                                
+                                <option value="state.val">Montana</option>
+                                
+                                <option value="state.val">Nebraska</option>
+                                
+                                <option value="state.val">Nevada</option>
+                                
+                                <option value="state.val">New Hampshire</option>
+                                
+                                <option value="state.val">New Jersey</option>
+                                
+                                <option value="state.val">New Mexico</option>
+                                
+                                <option value="state.val">New York</option>
+                                
+                                <option value="state.val">North Carolina</option>
+                                
+                                <option value="state.val">North Dakota</option>
+                                
+                                <option value="state.val">Ohio</option>
+                                
+                                <option value="state.val">Oklahoma</option>
+                                
+                                <option value="state.val">Oregon</option>
+                                
+                                <option value="state.val">Pennsylvania</option>
+                                
+                                <option value="state.val">Rhode Island</option>
+                                
+                                <option value="state.val">South Carolina</option>
+                                
+                                <option value="state.val">South Dakota</option>
+                                
+                                <option value="state.val">Tennessee</option>
+                                
+                                <option value="state.val">Texas</option>
+                                
+                                <option value="state.val">Utah</option>
+                                
+                                <option value="state.val">Vermont</option>
+                                
+                                <option value="state.val">Virginia</option>
+                                
+                                <option value="state.val">Washington</option>
+                                
+                                <option value="state.val">West Virginia</option>
+                                
+                                <option value="state.val">Wisconsin</option>
+                                
+                                <option value="state.val">Wyoming</option>
+                                
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Zip Code</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Address Line 1</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Address Line 2</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary exit" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Buy</button>
                 </div>
             </div>
@@ -410,7 +567,7 @@
 <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
     <div class="modal-dialog Mainmodal-dialog" role="document">
         <div class="modal-content Mainmodal-content">
-            <a href="#"><img src="/img/clear.svg" class="exitIcon" data-dismiss="modal"></a>
+            <a class="exit" href="#"><img src="/img/clear.svg" class="exitIcon" data-dismiss="modal"></a>
             <div class="modal-body">
                 <div class="container">
                         <div class="col-sm-12">
@@ -426,8 +583,8 @@
                                     be disappointed.</span>
                             </div>
                             </div>
+                            </h1>
                         </div>
-                    </h1>
                 </div>
                 <div class="container">
                         <div class="col-sm-12">
@@ -445,8 +602,8 @@
                                     I have a new track coming soon, be on the lookout for it. </span>
                             </div>
                             </div>
+                            </h1>
                         </div>
-                    </h1>
                 </div>
                 <div class="container">
                     <div class="col-sm-12">
@@ -461,8 +618,8 @@
                                     one of you. Thank you so much, you make my dreams. </span>
                             </div>
                         </div>
+                        </h1>
                     </div>
-                    </h1>
                 </div>
                 <div class="container">
                         <div class="col-sm-12">
@@ -478,7 +635,6 @@
                             </div>
                         </div>
                         </h1>
-                    </h1>
                 </div>
             </div>
             <div class="Mainmodal-footer">
@@ -501,7 +657,7 @@
             navigationTooltips: ['intro', 'about', 'tracklist', 'tour', 'merch', 'blog', 'end'],
             showActiveTooltip: false,
             autoScrolling: true,
-            normalScrollElements: '.modal',
+            //normalScrollElements: '.modal',
             menu: '#menu',
             scrollOverflow: true,
             scrollOverflowOptions:{
@@ -524,6 +680,22 @@
           document.getElementsByTagName("html")[0].style.visibility = "visible";
         });
             </script>
+     <script>
+    $(".sznBtn").click(function(){
+ fullpage_api.setAutoScrolling(true);
+		fullpage_api.setAllowScrolling(false);
+		fullpage_api.setKeyboardScrolling(false);
+		fullpage_api.setLockAnchors(false);
+});
+    </script>
+       <script>
+    $(".exit").click(function(){
+ fullpage_api.setAutoScrolling(true);
+		fullpage_api.setAllowScrolling(true);
+		fullpage_api.setKeyboardScrolling(true);
+		fullpage_api.setLockAnchors(false);
+});
+    </script>
 </body>
 
 </html>
