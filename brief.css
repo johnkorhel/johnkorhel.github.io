@@ -1,6 +1,4 @@
-html, body {
-    overflow: hidden;
-}
+
 body {
     background-color: #FFFFFF;
     -webkit-background-size: cover;
@@ -26,6 +24,7 @@ body {
     height: 100%;
     position: fixed;
     left: 0;
+    z-index:-200;
     top: 0;
 }
   ::-moz-selection{
@@ -129,6 +128,7 @@ body {
     z-index: 200;
 }
 .Mainmodal-dialog {
+    overflow-y:scroll;
     min-width: 100%;
     padding-left: 0px !important;
     height: 100%;
@@ -162,4 +162,16 @@ body {
 body.modal-open{
     overflow: hidden;
     height: 100%;
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    max-height: 500px;
+    overflow: scroll;
   }
