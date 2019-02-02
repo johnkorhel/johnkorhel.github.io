@@ -18,7 +18,7 @@
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,600" rel="stylesheet">
 </head>
 
 <body>
@@ -31,14 +31,23 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             menu: '#menu',
-            anchors: ['intro', 'about', 'tracklist', 'tour', 'merch', 'blog'],
+            anchors: ['intro', 'about', 'tracklist', 'tour', 'merch', 'blog', 'end'],
             sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
             navigation: true,
-            navigationTooltips: ['intro', 'about', 'tracklist', 'tour', 'merch', 'blog'],
+            navigationTooltips: ['intro', 'about', 'tracklist', 'tour', 'merch', 'blog', 'end'],
             showActiveTooltip: false,
-            autoScrolling: false,
+            autoScrolling: true,
             normalScrollElements: '.modal',
-            menu: '#menu'
+            menu: '#menu',
+            scrollOverflow: true,
+            scrollOverflowOptions:{
+             click: true,
+             preventDefaultException: { tagName:/^A/ },
+        //or
+        //click: false,
+        //preventDefaultException: { tagName:/.*/ },
+    },
+            
         });
     </script>
     <script src="/js/jquery.min.js"></script>

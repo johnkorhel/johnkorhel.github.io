@@ -1,3 +1,6 @@
+html, body {
+    overflow: hidden;
+}
 body {
     background-color: #FFFFFF;
     -webkit-background-size: cover;
@@ -24,8 +27,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
-  }
+}
   ::-moz-selection{
     background-color:Transparent;
     color:#000;
@@ -92,7 +94,72 @@ body {
     position:relative;
     
 }
+.sznBtnNav{
+    color: #000;
+    background-color: #FFFFFF;
+    border-color: #000000;
+    border-radius: 0px;
+    font-family: 'Roboto';
+    width: 200px;
+    z-index: 1000;
+    position:relative;
+    
+}
 .sc{
     z-index: 1000;
     position:relative;
 }
+.blogHead{
+    font-size: 28;
+    font-family: 'Roboto';
+    font-style: bold;
+}
+@media only screen and (max-width: 500px) {
+    .sznBtnNav {
+      margin-bottom: 5px;
+    }
+  }
+  .blogNav{
+      width: 3%;
+      position: absolute;
+      top: 50%;
+      right: 10%;
+  }
+.btn{
+    z-index: 200;
+}
+.Mainmodal-dialog {
+    min-width: 100%;
+    padding-left: 0px !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.Mainmodal-content {
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #FFFFFF !important;
+    color: #FFFFFF;
+    border: none !important;
+    border-radius: 0px !important;
+    position:fixed;
+    overflow:hidden;
+}
+
+
+.Mainmodal-footer {
+    border: none !important;
+}
+.exitIcon{
+    width: 20px !important;
+    height: 20px !important;
+    float: right;
+    margin: 20px;
+}
+body.modal-open{
+    overflow: hidden;
+    height: 100%;
+  }
