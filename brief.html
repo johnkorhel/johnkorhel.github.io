@@ -3,9 +3,8 @@ title: SZNS
 active: SZNS
 layout: brief
 ---
-
 <style>html { visibility:hidden; }</style>
-<script type="text/javascript" src="jquery/fullpage.js"></script>
+
 <div id="fullpage">
     <div class="section " id="section0">
         <div class="intro">
@@ -140,19 +139,27 @@ layout: brief
                                 <td>FEB 02</td>
                                 <td>530PM</td>
                             </tr>
+                            <tr>
+                                <th scope="row">PERTH, WA, AUSTRALIA</th>
+                                <td>RAC ARENA</td>
+                                <td>DEC 07</td>
+                                <td>7PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ADELAIDE, SA, AUSTRALIA</th>
+                                <td>ADELAIDE ENTERTAINMENT CENTRE</td>
+                                <td>DEC 10</td>
+                                <td>730PM</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MELBOURNE, VIC, AUSTRALIA</th>
+                                <td>ROD LAVER ARENA</td>
+                                <td>DEC 13</td>
+                                <td>8PM</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
-                
-            </div>
-            <div class="container">
-                <div class="col-sm-4 offset-md-4">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <a href="#" class="btn sznBtn" data-toggle="modal" data-target="#buyModal2">Buy</a>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
     </div>
@@ -207,7 +214,7 @@ layout: brief
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" id="turnOff" class="btn sznBtn" data-toggle="modal" data-target="#blogModal">View SZNS' blog</a>
+                <a href="#" class="btn sznBtn" data-toggle="modal" data-target="#blogModal">View SZNS' blog</a>
             </div>
         </div>
     </div>
@@ -276,76 +283,7 @@ layout: brief
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary exit" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Buy</button>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="modal fade" id="buyModal2" tabindex="-1" role="dialog" aria-labelledby="buyModal2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Quantity</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="product" class="control-label">Product</label>
-
-                            <select class="form-control" id="state" name="state">
-                                <option value="">N/A</option>
-                                <option>Rac Arena</option>
-                                <option>Adelaide Entertainment Centre</option>
-                                <option>Rod Laver Arena</option>
-                                <option>Qudos Bank Arena</option>
-                                <option>BrisBane Entertainment Center</option>
-                                <option>Spark Arena</option>
-                                <option>IHeartRadio Alter Ego 2019 The Forum</option>
-                                <option>Kiev Palace of Sports</option>
-                                <option>VTB Arena</option>
-                            </select>
-
-                        </div>
-                        <div class="form-group">
-                            <label for="state" class="control-label">State</label>
-
-                            <select class="form-control" id="state" name="state">
-                                <option value="">N/A</option>
-                                {% for state in site.data.states %}
-                                <option value="state.val">{{state.name}}</option>
-                                {% endfor %}
-                            </select>
-
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Zip Code</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Address Line 1</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Address Line 2</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary exit" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Buy</button>
                 </div>
             </div>
@@ -354,7 +292,7 @@ layout: brief
 <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModal" aria-hidden="true">
     <div class="modal-dialog Mainmodal-dialog" role="document">
         <div class="modal-content Mainmodal-content">
-            <a class="exit" href="#"><img src="/img/clear.svg" class="exitIcon" data-dismiss="modal"></a>
+            <a href="#"><img src="/img/clear.svg" class="exitIcon" data-dismiss="modal"></a>
             <div class="modal-body">
                 <div class="container">
                         <div class="col-sm-12">
@@ -370,8 +308,8 @@ layout: brief
                                     be disappointed.</span>
                             </div>
                             </div>
-                            </h1>
                         </div>
+                    </h1>
                 </div>
                 <div class="container">
                         <div class="col-sm-12">
@@ -389,8 +327,8 @@ layout: brief
                                     I have a new track coming soon, be on the lookout for it. </span>
                             </div>
                             </div>
-                            </h1>
                         </div>
+                    </h1>
                 </div>
                 <div class="container">
                     <div class="col-sm-12">
@@ -405,8 +343,8 @@ layout: brief
                                     one of you. Thank you so much, you make my dreams. </span>
                             </div>
                         </div>
-                        </h1>
                     </div>
+                    </h1>
                 </div>
                 <div class="container">
                         <div class="col-sm-12">
@@ -422,6 +360,7 @@ layout: brief
                             </div>
                         </div>
                         </h1>
+                    </h1>
                 </div>
             </div>
             <div class="Mainmodal-footer">

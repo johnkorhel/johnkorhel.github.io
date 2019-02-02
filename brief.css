@@ -62,12 +62,6 @@ body {
         display: none;
     }
 }
-@media only screen and (max-width: 768px){
-
-    .table-szn{
-        font-size: 8pt;
-    }
-}
 .content{
     background-color: #FFFFFF;
     padding: 20px;
